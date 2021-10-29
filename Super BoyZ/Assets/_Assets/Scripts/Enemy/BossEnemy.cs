@@ -6,15 +6,18 @@ namespace GamerWolf.Super_BoyZ {
         protected override void Start(){
             base.Start();
             base.onDead += OnBossDead;
+            base.OnHit += OnProjectileHit;
+        }
+        private void OnProjectileHit(object sender,EventArgs e){
+
         }
 
         private void OnBossDead(object sender,EventArgs e){
             Debug.Log("Boss Dead");
+            LevelManager.current.IncreaseBossKillCount();
             GameHandler.current.ShowInterstetialAds();
         }
-        private void OnCollisionEnter2D(Collision2D coli){
-            Debug.Log("coli name " + coli.transform.name);
-        }
+        
         
     }
 

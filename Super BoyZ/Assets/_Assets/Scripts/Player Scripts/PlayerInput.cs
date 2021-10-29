@@ -17,7 +17,7 @@ namespace GamerWolf.Super_BoyZ {
 
 
 
-        
+        #region Testing.....
         public bool isRightKeyPressing(){
             return Input.GetKeyDown(rightShowShildKey);
         }
@@ -33,7 +33,7 @@ namespace GamerWolf.Super_BoyZ {
         public bool isGrounded(){
             return Physics2D.OverlapCircle((Vector2)transform.position + offset,checkRange,whatIsGround);
         }
-
+        #endregion
         private void OnDrawGizmosSelected(){
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere((Vector2)transform.position + offset,checkRange);

@@ -36,21 +36,23 @@ namespace GamerWolf.Super_BoyZ {
 
         #endregion
 
+
         private void Start(){
             isGameOver = false;
-            // if(adController.IsRewardedAdLoaded()){
-            //     SetCanRewardedShowAd(true);
-            // }else{
-            //     SetCanRewardedShowAd(false);
-            // }
             StartCoroutine(nameof(GamePlayStartRoutine));
         }
         private void Update(){
+
+            // Debuing....
+            // Need to remove.......at build..
             if(Input.GetKeyDown(KeyCode.Escape)){
                 
                 Application.Quit();
             }
         }
+
+        #region Game Play Routine.....
+
         private IEnumerator GamePlayStartRoutine(){
             OnGameStart?.Invoke();
             while(!isGamePlaying){
@@ -105,19 +107,15 @@ namespace GamerWolf.Super_BoyZ {
                 OnGameEnd?.Invoke();
             }
         }
-        public void Restart(){
-            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        }
-        public void SetGameOver(){
-            StartCoroutine(GameOverRoutine(0.5f));
-        }
-        private IEnumerator GameOverRoutine(float delay){
-            yield return new WaitForSeconds(delay);
-            isGameOver = true;
-        }
-        
+
+        #endregion
+
+        #region public Set Methods..
         public void PlayGame(){
             isGamePlaying = true;
+        }
+        public void Restart(){
+            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
         }
         public void PauseGame(){
             Time.timeScale = 0f;
@@ -127,18 +125,35 @@ namespace GamerWolf.Super_BoyZ {
             Time.timeScale = 1f;
             OnGameResume?.Invoke();
         }
+        public void SetIsPlayerDead(bool _isdead){
+            isPlayerDead = _isdead;
+        }
+        public void SetGameOver(){
+            StartCoroutine(GameOverRoutine(0.1f));
+        }
+        private IEnumerator GameOverRoutine(float delay){
+            yield return new WaitForSeconds(delay);
+            isGameOver = true;
+        }
+        
+        #endregion
+
+
+
+        #region public Get Methods........
         public bool GetIsGamePlaying(){
             return isGamePlaying;
         }
 
+
+        #endregion
+
+        #region Public Ads Set Methods.......
         public void SetCanRewardedShowAd(bool _value){
             canShowAd = _value;
         }
         public void SetIsAdsPlaying(bool _value){
             isShowingAds = _value;
-        }
-        public void SetIsPlayerDead(bool _isdead){
-            isPlayerDead = _isdead;
         }
         public void SetIsRevived(bool _value){
             isRevived = _value;
@@ -149,6 +164,7 @@ namespace GamerWolf.Super_BoyZ {
                 // adController.ShowInterstitialAd();
             }
         }
+        #endregion
         
     }
 

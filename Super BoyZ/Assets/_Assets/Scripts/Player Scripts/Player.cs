@@ -21,7 +21,7 @@ namespace GamerWolf.Super_BoyZ {
         private PlayerInput playerInput;
 
         private bool enableInputs;
-        
+        #region Singelton......
         public static Player current;
         private void Awake(){
             if(current == null){
@@ -34,6 +34,7 @@ namespace GamerWolf.Super_BoyZ {
             rb = GetComponent<Rigidbody2D>();
             playerInput = GetComponent<PlayerInput>();
         }
+        #endregion
         private void Update(){
             if(enableInputs){
                 BetterJump();

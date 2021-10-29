@@ -1,6 +1,5 @@
 using UnityEngine;
 using GamerWolf.Utils;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace GamerWolf.Super_BoyZ {
@@ -16,17 +15,17 @@ namespace GamerWolf.Super_BoyZ {
         [SerializeField] private LayerMask whatIsEnemy;
 
         private ObjectPoolingManager objectPooling;
+        private LevelManager levelManager;
         private void Start(){
-            
             objectPooling = ObjectPoolingManager.i;
-            
+            levelManager = LevelManager.current;
         }
         public void CheckForExtraEnemy(){
-            
             if(hasEnemyOnPlatform()){
                 foreach(EnemyBase enemys in platformEnemy()){
                     enemys.DestroyMySelf();
-                    LevelManager.current.RemoveEnemy(enemys);
+                    levelManager.RemoveMinonEnemy(enemys);
+                    levelManager.RemoveBossEnemy(enemys);
                 }
             }
             
@@ -55,11 +54,12 @@ namespace GamerWolf.Super_BoyZ {
                 }
             }
             
+            
             return enemyList;
         }
 
         
-        public void SpawnMinionEnemy(Transform _viewTarget,EnemyPos pos){
+        public void SpawnMinionEnemy(Transform _viewTarget,EnemyPositions pos){
             
             if(!hasEnemyOnPlatform()){
                 Vector2 spanwPoint = (Vector2) transform.position + offset;
@@ -69,17 +69,18 @@ namespace GamerWolf.Super_BoyZ {
                 if(minion != null){
                     minion.SetTarget(_viewTarget);
                 }
-                
+                levelManager.AddMinionEnemy(minion);
             }else{
                 for (int i = 0; i < platformEnemy().Count; i++){
                     foreach(EnemyBase enemys in platformEnemy()){
                         enemys.DestroyMySelf();
+                        levelManager.RemoveMinonEnemy(enemys);
                     }
                 }
             }
         }
         
-        public void SpawnBossEnemy(Transform _viewTarget,EnemyPos pos){
+        public void SpawnBossEnemy(Transform _viewTarget,EnemyPositions pos){
             if(!hasEnemyOnPlatform()){
                 Vector2 spanwPoint = (Vector2) transform.position + offset;
                 GameObject enemy = objectPooling.SpawnFromPool(PoolObjectTag.Boss_Enemy,spanwPoint,transform.rotation);
@@ -88,10 +89,12 @@ namespace GamerWolf.Super_BoyZ {
                 if(boss != null){
                     boss.SetTarget(_viewTarget);
                 }
+                levelManager.AddBossEnemy(boss);
             }else{
                 for (int i = 0; i < platformEnemy().Count; i++){
                     foreach(EnemyBase enemys in platformEnemy()){
                         enemys.DestroyMySelf();
+                        levelManager.RemoveBossEnemy(enemys);
                     }
                 }
             }

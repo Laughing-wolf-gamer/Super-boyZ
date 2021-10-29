@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532029970218044074}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.237, y: 2.15, z: 0}
+  m_LocalPosition: {x: -0.237, y: 2.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1532029970732808153}
@@ -266,7 +266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532029970732808154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.754, y: 0, z: 0}
+  m_LocalPosition: {x: 1.38, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1532029970356105578}
@@ -297,7 +297,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532029971071929342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.613, y: 0, z: 0}
+  m_LocalPosition: {x: 0.84, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1532029970356105578}
@@ -351,7 +351,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.49, y: 2.21}
+  m_Offset: {x: -0.49, y: 2.0592537}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -362,7 +362,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.58, y: 3.09}
+  m_Size: {x: 1.5799999, y: 3.3914928}
   m_EdgeRadius: 0
 --- !u!50 &1532029971087035822
 Rigidbody2D:
@@ -397,14 +397,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6e3de8a7155c54aabe9468cf73e78a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 1
   isDead: 0
   currentHealth: 0
   canDie: 0
+  canHit: 1
   bulletSpeedBottomEnemy: 260
   bulletSpeedTopEnemy: 260
-  topEnemyFireRate: 3
-  bottomEnmyFireRate: 2
+  topEnemyFireRate: 2.1
+  bottomEnmyFireRate: 1.5
   wepon: {fileID: 1532029970356105577}
   weponPivot: {fileID: 1532029970218044073}
   canShoot: 0

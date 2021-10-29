@@ -73,12 +73,12 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 50
+  m_LinearDrag: 1
   m_AngularDrag: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 5
@@ -94,14 +94,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88322ae465f907d49911e12bc3e99389, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
+  maxHealth: 5
   isDead: 0
   currentHealth: 0
   canDie: 0
+  canHit: 1
   bulletSpeedBottomEnemy: 300
   bulletSpeedTopEnemy: 300
-  topEnemyFireRate: 1.8
-  bottomEnmyFireRate: 0.5
+  topEnemyFireRate: 1.2
+  bottomEnmyFireRate: 0
   wepon: {fileID: 5093911953338128258}
   weponPivot: {fileID: 5093911953200344130}
   canShoot: 0
@@ -159,7 +160,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5093911953200344129}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.775, z: 0}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5093911954033070386}
@@ -401,7 +402,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5093911954033070385}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.754, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5093911953338128257}

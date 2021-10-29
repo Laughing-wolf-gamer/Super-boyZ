@@ -18,10 +18,10 @@ namespace GamerWolf.Super_BoyZ {
             rb.AddForce(transform.right * moveSpeed);
         }
         private void OnCollisionEnter2D(Collision2D coli){
-            Debug.Log("Hit with " + coli.gameObject.name);
+
             EnemyBase enemy = coli.gameObject.GetComponent<EnemyBase>();
             if(enemy != null){
-                enemy.TakeHit(20);
+                enemy.TakeHit(1);
                 DestroyMySelf();
             }
             
