@@ -66,6 +66,7 @@ namespace GamerWolf.Super_BoyZ {
                 GameObject enemy = objectPooling.SpawnFromPool(PoolObjectTag.Minion_Enemy,spanwPoint,transform.rotation);
                 EnemyBase minion = enemy.GetComponent<EnemyBase>();
                 minion.SetEnemyPosition(pos);
+                
                 if(minion != null){
                     minion.SetTarget(_viewTarget);
                 }
@@ -82,6 +83,7 @@ namespace GamerWolf.Super_BoyZ {
         
         public void SpawnBossEnemy(Transform _viewTarget,EnemyPositions pos){
             if(!hasEnemyOnPlatform()){
+                
                 Vector2 spanwPoint = (Vector2) transform.position + offset;
                 GameObject enemy = objectPooling.SpawnFromPool(PoolObjectTag.Boss_Enemy,spanwPoint,transform.rotation);
                 EnemyBase boss = enemy.GetComponent<EnemyBase>();

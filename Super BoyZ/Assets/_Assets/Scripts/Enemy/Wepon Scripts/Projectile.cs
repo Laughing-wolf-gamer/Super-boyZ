@@ -19,9 +19,11 @@ namespace GamerWolf.Super_BoyZ {
         }
         private void OnCollisionEnter2D(Collision2D coli){
 
-            EnemyBase enemy = coli.gameObject.GetComponent<EnemyBase>();
-            if(enemy != null){
-                enemy.TakeHit(1);
+            EnemyBase eneity = coli.gameObject.GetComponent<EnemyBase>();
+
+            if(eneity != null){
+                Debug.Log("Enemy");
+                eneity.TakeHit(1);
                 DestroyMySelf();
             }
             
@@ -29,6 +31,15 @@ namespace GamerWolf.Super_BoyZ {
                 DestroyMySelf();
             }
         }
+        // private void OnTriggerEnter2D(Collider2D coli){
+        //     HealthEntity eneity = coli.gameObject.GetComponent<HealthEntity>();
+
+        //     if(eneity != null){
+        //         Debug.Log("Enemy");
+        //         eneity.TakeHit(1);
+        //         DestroyMySelf();
+        //     }
+        // }
         
 
         public void OnObjectReuse(){

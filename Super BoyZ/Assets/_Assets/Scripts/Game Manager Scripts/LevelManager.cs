@@ -41,10 +41,11 @@ namespace GamerWolf.Super_BoyZ {
         private float spawnTime;
         private SpawnLevels spawnLevels;
         private GameHandler gameHandler;
-        private string enemyTimerName = "Top Minions";
+        private string enemyTimerName = "Enemy";
 
         [SerializeField] private List<EnemyBase> minionEnemyList;
-        [SerializeField] private List<EnemyBase> bossList;
+        [SerializeField] private List<EnemyBase> bossMinonList;
+        
         #region Singelton....
         public static LevelManager current;
         private void Awake(){
@@ -61,7 +62,7 @@ namespace GamerWolf.Super_BoyZ {
         
         private void Start(){
             minionEnemyList = new List<EnemyBase>();
-            bossList = new List<EnemyBase>();
+            bossMinonList = new List<EnemyBase>();
             
             player.onDead += SetPlayerDead;
         }
@@ -70,40 +71,56 @@ namespace GamerWolf.Super_BoyZ {
         public void StartTimer(){
             spawnTime = 2f;
             TimerTickSystem.CreateTimer(SpawnEnemies,spawnTime,enemyTimerName);
+            
+        }
+        private void SetBossFire(){
+            if(bossMinonList.Count > 0){
+                foreach(EnemyBase boss in bossMinonList){
+                    boss.onFire += FireAfterBossFire;
+                }
+            }
+        }
+        private void FireAfterBossFire(){
+            if(minionEnemyList.Count > 0){
+                foreach(EnemyBase enemy in minionEnemyList){
+                    enemy.Shoot();
+                }
+            }
         }
         
         #region Spawning Level Progressen....
         
         private void SpawnEnemies(){
+            SetBossFire();
             if(minionEnemyList.Count <= 0){
                 switch (spawnLevels){
                     
                     case SpawnLevels.Level_1:
-                        Debug.Log("On Level 1 Difficulty");
+                        // Debug.Log("On Level 1 Difficulty");
                         SetTimer(2f);
                         SpawnLevel_1_Defficulty();
                     break;
                     case SpawnLevels.Level_2:
-                        Debug.Log("On Level 2 Difficulty");
+                        // Debug.Log("On Level 2 Difficulty");
                         
                         SpawnLevel_2_Defficultiy();
                         SetTimer(1.9f);
 
                     break;
                     case SpawnLevels.Level_3:
-                        Debug.Log("On Level 3 Difficulty");
+                        // Debug.Log("On Level 3 Difficulty");
                         
                         SpawnLevel_3_Defficultiy();
                         SetTimer(1.7f);
                     break;
                     case SpawnLevels.Level_4:
-                        Debug.Log("On Level 4 Difficulty");
+                        // Debug.Log("On Level 4 Difficulty");
                         
                         SpawnLevel_4_Defficultiy();
                         SetTimer(1.5f);
                     break;
                     case SpawnLevels.Level_5:
-                        Debug.Log("On Level 5 Difficulty");
+                        // Debug.Log("On Level 5 Difficulty");
                         SpawnLevel_5_Defficultiy();
                         SetTimer(1f);
                     break;
@@ -112,6 +129,7 @@ namespace GamerWolf.Super_BoyZ {
                 }
                 
             }
+            CheckifBossInScene();
             
         }
         private void SpawnLevel_1_Defficulty(){
@@ -121,7 +139,7 @@ namespace GamerWolf.Super_BoyZ {
                 return;
             }
             int rand = UnityEngine.Random.Range(0,2);
-            SpawnBottomPlatformMinionEnemys();
+            SpawnBottomPlatformMinionEnemys(3);
         }
         private void SpawnLevel_2_Defficultiy(){
             
@@ -135,10 +153,10 @@ namespace GamerWolf.Super_BoyZ {
             if(rand >= 3){
                 SpawnTopPlatformMinionEnemys();
             }else{
-                SpawnBottomPlatformMinionEnemys();
-                if(bossRandSpawnNumber >= 2){
+                if(bossRandSpawnNumber >= 6){
                     SpawnBossEnemys();
                 }
+                SpawnBottomPlatformMinionEnemys(3);
             }
             
         }
@@ -155,16 +173,16 @@ namespace GamerWolf.Super_BoyZ {
                 SpawnTopPlatformMinionEnemys();
             }
             if(rand > 2){
-                SpawnBottomPlatformMinionEnemys();
-                if(bossRandSpawnNumber >= 4){
+                if(bossRandSpawnNumber >= 5){
                     SpawnBossEnemys();
                 }
+                SpawnBottomPlatformMinionEnemys(2);
                 
             }
             
         }
         private bool hasBoss(){
-            if(bossList.Count > 0){
+            if(bossMinonList.Count > 0){
                 return true;
             }
             return false;
@@ -179,25 +197,25 @@ namespace GamerWolf.Super_BoyZ {
             int rand = UnityEngine.Random.Range(0,7);
             int bossRandSpawnNumber = UnityEngine.Random.Range(0,10);
             if(rand > 2){
-                SpawnBottomPlatformMinionEnemys();
-                if(bossRandSpawnNumber >= 2){
+                if(bossRandSpawnNumber >= 4){
                     SpawnBossEnemys();
                 }
+                SpawnBottomPlatformMinionEnemys(1);
             }else{
                 SpawnTopPlatformMinionEnemys();
             }
             
         }
         private void SpawnLevel_5_Defficultiy(){
-            int rand = UnityEngine.Random.Range(0,7);
+            int rand = UnityEngine.Random.Range(0,10);
             int bossRandSpawnNumber = UnityEngine.Random.Range(0,10);
-            if(rand > 5){
+            if(rand >= 5){
                 SpawnTopPlatformMinionEnemys();
             }else{
-                SpawnBottomPlatformMinionEnemys();
-                if(bossRandSpawnNumber >= 1){
+                if(bossRandSpawnNumber >= 3){
                     SpawnBossEnemys();
                 }
+                SpawnBottomPlatformMinionEnemys(1);
             }
             
         }
@@ -211,10 +229,11 @@ namespace GamerWolf.Super_BoyZ {
             if(!minionEnemyList.Contains(enemy)){
                 minionEnemyList.Add(enemy);
             }
+
         }
         public void AddBossEnemy(EnemyBase enemy){
-            if(!bossList.Contains(enemy)){
-                bossList.Add(enemy);
+            if(!bossMinonList.Contains(enemy)){
+                bossMinonList.Add(enemy);
             }
         }
         public void RemoveMinonEnemy(EnemyBase enemy){
@@ -223,10 +242,26 @@ namespace GamerWolf.Super_BoyZ {
             }
         }
         public void RemoveBossEnemy(EnemyBase enemy){
-            if(bossList.Contains(enemy)){
-                bossList.Remove(enemy);
+            if(bossMinonList.Contains(enemy)){
+                bossMinonList.Remove(enemy);
             }
         }
+        private void CheckifBossInScene(){
+            if(bossMinonList.Count <= 0){
+                foreach(EnemyBase enemy in minionEnemyList){
+                    if(enemy.GetEnemyPositions() == EnemyPositions.withBoss){
+                        enemy.SetEnemyPosition(EnemyPositions.Bottom);
+                    }
+                }
+            }
+        }
+        // private void IfSpawnWithBoss(){
+        //     foreach(EnemyBase enemy in bossMinonList){
+        //         if(enemy.GetEnemyType() == EnemyType.Minions){
+        //             enemy.SetEnemyPosition(EnemyPositions.withBoss);
+        //         }
+        //     }
+        // }
         
         #endregion
 
@@ -244,15 +279,13 @@ namespace GamerWolf.Super_BoyZ {
         
         #region Bottom Enemy Spawing Conditions....
 
-        private void SpawnBottomPlatformMinionEnemys(){
-
-            int enemyspawnNumber = UnityEngine.Random.Range(0,5);
-            
-            for (int i = 0; i < minionBottomPlatformspawnPointArray.Length; i++){
-                if(minionBottomPlatformspawnPointArray[i].hasEnemyOnPlatform()){
+        private void SpawnBottomPlatformMinionEnemys(int probabilty){
+            int enemyspawnNumber = UnityEngine.Random.Range(0,7);
+            foreach(Platform platform in minionBottomPlatformspawnPointArray){
+                if(platform.hasEnemyOnPlatform()){
                     break;
                 }else{
-                    if(enemyspawnNumber >= 1){
+                    if(enemyspawnNumber >= probabilty){
                         SpawnSingelEnemey();
 
                     }else{
@@ -260,19 +293,27 @@ namespace GamerWolf.Super_BoyZ {
                     }
 
                 }
-                
+
             }
             
         }
         private void SpawnSingelEnemey(){
             int rand = UnityEngine.Random.Range(0,minionBottomPlatformspawnPointArray.Length);
-            minionBottomPlatformspawnPointArray[rand].SpawnMinionEnemy(player.GetBottomtargetPoint(),EnemyPositions.Bottom);
-            
+            if(bossMinonList.Count > 0){
+                minionBottomPlatformspawnPointArray[rand].SpawnMinionEnemy(player.GetBottomtargetPoint(),EnemyPositions.withBoss);
+            }else{
+                minionBottomPlatformspawnPointArray[rand].SpawnMinionEnemy(player.GetBottomtargetPoint(),EnemyPositions.Bottom);
+            }
         }
         private void SpawnBothSideEnemy(){
             foreach(Platform pl in minionBottomPlatformspawnPointArray){
-                pl.SpawnMinionEnemy(player.GetBottomtargetPoint(),EnemyPositions.Bottom);
+                if(bossMinonList.Count > 0){
+                    pl.SpawnMinionEnemy(player.GetBottomtargetPoint(),EnemyPositions.withBoss);
+                }else{
+                    pl.SpawnMinionEnemy(player.GetBottomtargetPoint(),EnemyPositions.Bottom);
+                }
             }
+            
         }
 
 
@@ -285,6 +326,8 @@ namespace GamerWolf.Super_BoyZ {
                     platforms.SpawnMinionEnemy(player.GetToptargetPoint(),EnemyPositions.Top);
                     
                 }
+            }else{
+                SpawnBottomPlatformMinionEnemys(4);
             }
         }
         
@@ -314,7 +357,7 @@ namespace GamerWolf.Super_BoyZ {
         
         #region Set Player Dead and Ask for Ads.....
         public void SetPlayerDead(object sender,EventArgs e){
-
+            ScreenShakeManager.current.StartShake();
             Debug.Log("Player Once Dead");
             for (int i = 0; i < minionEnemyList.Count; i++){
                 minionEnemyList[i].SetCanShoot(false);
@@ -341,7 +384,12 @@ namespace GamerWolf.Super_BoyZ {
             TimerTickSystem.StopTimer(enemyTimerName);
             for (int i = 0; i < minionEnemyList.Count; i++){
                 minionEnemyList[i].SetCanShoot(false);
+                minionEnemyList[i].gameObject.SetActive(false);
             }
+            for (int i = 0; i < bossMinonList.Count; i++){
+                bossMinonList[i].gameObject.SetActive(false);
+            }
+            
         }
 
 

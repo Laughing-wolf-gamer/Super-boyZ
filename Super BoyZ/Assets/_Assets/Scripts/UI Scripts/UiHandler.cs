@@ -22,7 +22,7 @@ namespace GamerWolf.Super_BoyZ {
 
 
         public void SetKillCounts(int _value){
-            killCountText.SetText("Kills : " + _value.ToString());
+            killCountText.SetText(_value.ToString());
             
         }
         public void ShowAdWindow(bool _Show){

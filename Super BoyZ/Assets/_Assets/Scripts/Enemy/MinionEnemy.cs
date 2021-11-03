@@ -9,6 +9,17 @@ namespace GamerWolf.Super_BoyZ {
         protected override void Start(){
             base.Start();
             onDead += OnMinionDead;
+            base.onFire = OnMinonFire;
+            base.OnHit += OnMinoHit;
+        }
+
+        private void OnMinoHit(object sender, EventArgs e){
+            
+        }
+
+        private void OnMinonFire(){
+            Debug.Log("Minon fired from " + base.enemyPos);
+            // Shoot();
         }
         
 

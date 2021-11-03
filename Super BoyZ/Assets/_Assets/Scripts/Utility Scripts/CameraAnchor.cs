@@ -16,6 +16,7 @@ namespace GamerWolf.Utils{
 		};
 		[SerializeField] private AnchorType anchorType;
 		[SerializeField] private Vector3 anchorOffset;
+		[SerializeField] private bool runOnce;
 
 		private IEnumerator updateAnchorRoutine; 
 
@@ -82,6 +83,11 @@ namespace GamerWolf.Utils{
 			if (updateAnchorRoutine == null) {
 				updateAnchorRoutine = UpdateAnchorAsync();
 				StartCoroutine(updateAnchorRoutine);
+			}
+			if(Application.isPlaying){
+				if(runOnce){
+					Destroy(this);
+				}
 			}
 		}
 		

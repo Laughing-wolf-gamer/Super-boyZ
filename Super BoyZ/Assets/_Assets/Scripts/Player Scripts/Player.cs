@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
-
+using GamerWolf.Utils;
 namespace GamerWolf.Super_BoyZ {
     [RequireComponent(typeof(Rigidbody2D),typeof(PlayerInput))]
     public class Player : HealthEntity {
@@ -19,7 +20,7 @@ namespace GamerWolf.Super_BoyZ {
 
         private Rigidbody2D rb;
         private PlayerInput playerInput;
-
+        
         private bool enableInputs;
         #region Singelton......
         public static Player current;
@@ -34,6 +35,10 @@ namespace GamerWolf.Super_BoyZ {
             rb = GetComponent<Rigidbody2D>();
             playerInput = GetComponent<PlayerInput>();
         }
+        
+
+
+
         #endregion
         private void Update(){
             if(enableInputs){

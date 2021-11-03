@@ -3,10 +3,16 @@ using UnityEngine;
 using GamerWolf.Utils;
 using System.Collections.Generic;
 public enum EnemyPositions{
-    Top,Bottom
+    Top,Bottom,withBoss
+}
+public enum EnemyType{
+    Minions,Boss,
 }
 namespace GamerWolf.Super_BoyZ {
     public class EnemyBase : HealthEntity,IPooledObject{
+
+        #region Exposed Variables......
+        [SerializeField] private EnemyType enemyType;
         
         [SerializeField] private float bulletSpeedBottomEnemy = 100f,bulletSpeedTopEnemy = 150f;
         
@@ -14,16 +20,33 @@ namespace GamerWolf.Super_BoyZ {
 
         [SerializeField] private EnemyWepon wepon;
         [SerializeField] protected Transform weponPivot;
-        // [SerializeField] private HealthCounterPopUp healthCounterPopUp;
+
+        [Header("Animators")]
+        [SerializeField] protected Animator topEnemyGFXanimator;
+        [SerializeField] protected Animator bottomEnemyGFXanimator;
+        [SerializeField] protected Vector3 topEnemyWeponPivotPos,bottomEnemyWeponPivotPos;
+
+
+        #endregion
+
+        #region Private Variables......
         private float maxTimeToFire;
         private float fireRate;
         private Transform target;
         private float bulletSpeed;
         public bool canShoot;
         protected List<Projectile> currentShootingProjectileList;
-        private EnemyPositions enemyPos;
+        protected EnemyPositions enemyPos;
         private LevelManager levelManager;
-        
+        private bool readyToShoot;
+        protected Animator currentGFXAnimator;
+
+
+        #endregion
+
+        #region Events...
+        public Action onFire;
+        #endregion
         
         protected override void Start(){
             base.Start();
@@ -42,26 +65,51 @@ namespace GamerWolf.Super_BoyZ {
                         
                         case EnemyPositions.Top:
                             SetWeponRotation();
+                            Fireing();
                         break;
 
                         case EnemyPositions.Bottom:
-                            weponPivot.localRotation = Quaternion.Euler(Vector3.zero);
+                            
+                            Fireing();
+                        break;
+                        case EnemyPositions.withBoss:
+                            SetWeponRotation();
+                            
                         break;
                     }
-                    SetWeponRotation();
                     
-                    if(fireRate >= maxTimeToFire){
-                        Shoot();
-                        fireRate = 0f;
-                        
-                    }else{
-                        fireRate += Time.deltaTime;
-                    }
+                    
                 }else{
                     DestroyMySelf();
                 }
             }
             
+        }
+        private void Fireing(){
+            if(fireRate >= maxTimeToFire){
+                Shoot();
+                fireRate = 0f;
+                
+            }else{
+                fireRate += Time.deltaTime;
+            }
+        }
+        private void ChangeAnimator(bool bottomSide,bool topSide){
+            if(bottomEnemyGFXanimator != null){
+                bottomEnemyGFXanimator.gameObject.SetActive(bottomSide);
+                if(bottomSide){
+                    weponPivot.localPosition = bottomEnemyWeponPivotPos;
+                }
+                
+            }
+            if(topEnemyGFXanimator != null){
+                topEnemyGFXanimator.gameObject.SetActive(topSide);
+                if(topSide){
+                    weponPivot.localPosition = topEnemyWeponPivotPos;
+                }
+
+            }
+
         }
         private void OnProjecitleHit(object sender,EventArgs e){
             // healthCounterPopUp.SetText(currentHealth.ToString());
@@ -107,16 +155,33 @@ namespace GamerWolf.Super_BoyZ {
             this.enemyPos = _enemyPos;
             switch (this.enemyPos){
                 case EnemyPositions.Top:
+
                     bulletSpeed = bulletSpeedTopEnemy;
                     SetFireRate(topEnemyFireRate);
+                    ChangeAnimator(false,true);
+                    SetCurrentGFXAnimator(topEnemyGFXanimator);
                 break;
 
                 case EnemyPositions.Bottom:
                     bulletSpeed = bulletSpeedBottomEnemy;
                     SetFireRate(bottomEnmyFireRate);
+                    ChangeAnimator(true,false);
+                    SetCurrentGFXAnimator(bottomEnemyGFXanimator);
+                break;
+                case EnemyPositions.withBoss:
+                    Debug.Log("is With boss");
+                    SetFireRate(maxTimeToFire);
+                    ChangeAnimator(true,false);
+                    
+                    SetCurrentGFXAnimator(bottomEnemyGFXanimator);
                 break;
             }
             
+        }
+        private void SetCurrentGFXAnimator(Animator anim){
+            if(anim != null){
+                currentGFXAnimator = anim;
+            }
         }
 
 
@@ -124,19 +189,31 @@ namespace GamerWolf.Super_BoyZ {
 
         #region Parent - Child Methods......
         
-        protected void Shoot(){
-            wepon.ShootBullet(bulletSpeedBottomEnemy);
+        public void Shoot(){
+            if(readyToShoot){
+                wepon.ShootBullet(bulletSpeedBottomEnemy);
+                currentGFXAnimator.SetTrigger("Fire");
+                Invoke(nameof(InvokeOnFire),0.5f);
+            }
             
+        }
+        private void InvokeOnFire(){
+            onFire?.Invoke();
         }
 
         public void OnObjectReuse(){
             SetCanShoot(true);
             fireRate = 0f;
             RestHealth();
+            Invoke(nameof(InovkeReadyToShoot),1f);
+        }
+        private void InovkeReadyToShoot(){
+            readyToShoot = true;
         }
         
 
         public void DestroyMySelf(){
+            readyToShoot = false;
             canShoot = false;
             gameObject.SetActive(false);
             weponPivot.localRotation = Quaternion.Euler(Vector3.zero);
@@ -144,6 +221,14 @@ namespace GamerWolf.Super_BoyZ {
             levelManager.RemoveMinonEnemy(this);
             levelManager.RemoveBossEnemy(this);
         }
+        #region Public Getters...
+        public EnemyType GetEnemyType(){
+            return enemyType;
+        }
+        public EnemyPositions GetEnemyPositions(){
+            return enemyPos;
+        }
+        #endregion
         #endregion
         
     }
