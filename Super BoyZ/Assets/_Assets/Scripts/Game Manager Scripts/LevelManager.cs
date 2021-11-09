@@ -361,7 +361,9 @@ namespace GamerWolf.Super_BoyZ {
             Debug.Log("Player Once Dead");
             for (int i = 0; i < minionEnemyList.Count; i++){
                 minionEnemyList[i].SetCanShoot(false);
-                minionEnemyList[i].SetCanShoot(false);
+            }
+            for (int i = 0; i < bossMinonList.Count; i++){
+                bossMinonList[i].SetCanShoot(false);
             }
             player.SetInputsEnableDesable(false);
             gameHandler.SetIsPlayerDead(true);
@@ -372,6 +374,9 @@ namespace GamerWolf.Super_BoyZ {
             player.onDead += SetPlayerDead;
             for (int i = 0; i < minionEnemyList.Count; i++){
                 minionEnemyList[i].SetCanShoot(true);
+            }
+            for (int i = 0; i < bossMinonList.Count; i++){
+                bossMinonList[i].SetCanShoot(true);
             }
             
         }

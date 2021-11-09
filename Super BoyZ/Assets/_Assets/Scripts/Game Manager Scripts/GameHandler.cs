@@ -161,8 +161,11 @@ namespace GamerWolf.Super_BoyZ {
         }
         public void ShowInterstetialAds(){
             if(hasAdInGame){
-                // adController.ShowInterstitialAd();
+                Invoke(nameof(InvokeInterstetialAds),0.4f);
             }
+        }
+        private void InvokeInterstetialAds(){
+            adController.ShowInterstitialAd();
         }
         #endregion
         
