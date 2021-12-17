@@ -13,15 +13,17 @@ namespace GamerWolf.Super_BoyZ {
         [Header("Externel Referneces")]
         [SerializeField] private Transform topEnemyTargetPoint;
         [SerializeField] private Transform bottomEnemyTargetPoint;
-        
+        [SerializeField] private PlayerAnimationsHandler animationsHandler;
         [SerializeField] private Transform shieldHolder;
+        
+        
         private bool canJump;
         private bool isjumping;
 
         private Rigidbody2D rb;
         private PlayerInput playerInput;
-        
         private bool enableInputs;
+
         #region Singelton......
         public static Player current;
         private void Awake(){
@@ -31,13 +33,13 @@ namespace GamerWolf.Super_BoyZ {
                 Destroy(current.gameObject);
             }
 
-            
             rb = GetComponent<Rigidbody2D>();
             playerInput = GetComponent<PlayerInput>();
+            
         }
         
 
-
+        
 
         #endregion
         private void Update(){
@@ -45,17 +47,22 @@ namespace GamerWolf.Super_BoyZ {
                 BetterJump();
                 if(playerInput.isLeftKeyPressing()){
                     LookLeft();
+                    
                 }else if(playerInput.isRightKeyPressing()){
                     LookRight();
+                    
                 }else if(playerInput.isUpKeyPressing()){
                     LookUp();
+                    
                 }
                 if(playerInput.jumpKeyPressed()){
                     Jump();
+                
                 }
                 if(playerInput.isGrounded()){
                     isjumping = false;
                 }
+                animationsHandler.SetJumping(isjumping);
             }
         }
         public void Jump(){
@@ -71,12 +78,15 @@ namespace GamerWolf.Super_BoyZ {
         public void LookRight(){
             shieldHolder.localEulerAngles = Vector3.zero;
             transform.eulerAngles = new Vector3(transform.eulerAngles.x,0f,transform.eulerAngles.z);
+            animationsHandler.SetShildShowing(currentShieldDirection.Right);
         }
         public void LookLeft(){
             shieldHolder.localEulerAngles = Vector3.zero;
             transform.eulerAngles = new Vector3(transform.eulerAngles.x,180f,transform.eulerAngles.z);
+            animationsHandler.SetShildShowing(currentShieldDirection.Left);
         }
         public void LookUp(){
+            animationsHandler.SetShildShowing(currentShieldDirection.Up);
             shieldHolder.localEulerAngles = new Vector3(shieldHolder.localEulerAngles.x,shieldHolder.localEulerAngles.y,90f);
         }
 
@@ -115,6 +125,7 @@ namespace GamerWolf.Super_BoyZ {
         public void SetInputsEnableDesable(bool _value){
             enableInputs = _value;
         }
+        
 
     }
 

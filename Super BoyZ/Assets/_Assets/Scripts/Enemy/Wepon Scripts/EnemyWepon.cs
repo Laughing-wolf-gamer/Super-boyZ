@@ -8,6 +8,7 @@ namespace GamerWolf.Super_BoyZ {
         [SerializeField] private Transform firePoint;
         [SerializeField] protected EnemyBase enemyBase;
         private ObjectPoolingManager objectPooling;
+        
         private void Start(){
             objectPooling = ObjectPoolingManager.i;
         }

@@ -5,7 +5,7 @@ using UnityEngine;
 namespace GamerWolf.Utils{
 
     
-    public enum PoolObjectTag{Bullets,Minion_Enemy,Boss_Enemy,HealthPopUP}
+    public enum PoolObjectTag{Bullets,Top_Minion_Enemy,Bottom_Minion_Enemy,Boss_Enemy,HealthPopUP}
     public class ObjectPoolingManager : MonoBehaviour{
 
         #region Singelton.

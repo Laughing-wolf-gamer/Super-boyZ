@@ -1,11 +1,13 @@
 using UnityEngine;
 using GamerWolf.Utils;
+using UnityEngine.Events;
 
 namespace GamerWolf.Super_BoyZ {
     public class Projectile : MonoBehaviour,IPooledObject{
 
 
         [SerializeField] private float lifeTime = 10f;
+        [SerializeField] private UnityEvent onResue,onDestroy;
         public float moveSpeed;
         private Rigidbody2D rb;
         
@@ -45,11 +47,12 @@ namespace GamerWolf.Super_BoyZ {
         public void OnObjectReuse(){
             
             Invoke(nameof(DestroyMySelf),lifeTime);
+            onResue?.Invoke();
         }
 
         public void DestroyMySelf(){
             gameObject.SetActive(false);
-            
+            onDestroy?.Invoke();
         }
         
 

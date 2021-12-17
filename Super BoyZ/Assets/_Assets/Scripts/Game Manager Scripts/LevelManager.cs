@@ -45,7 +45,8 @@ namespace GamerWolf.Super_BoyZ {
 
         [SerializeField] private List<EnemyBase> minionEnemyList;
         [SerializeField] private List<EnemyBase> bossMinonList;
-        
+        public Action onPlayerRevived;
+
         #region Singelton....
         public static LevelManager current;
         private void Awake(){
@@ -65,6 +66,7 @@ namespace GamerWolf.Super_BoyZ {
             bossMinonList = new List<EnemyBase>();
             
             player.onDead += SetPlayerDead;
+            onPlayerRevived += CrossCheckForWithBoss;
         }
         
        
@@ -77,6 +79,15 @@ namespace GamerWolf.Super_BoyZ {
             if(bossMinonList.Count > 0){
                 foreach(EnemyBase boss in bossMinonList){
                     boss.onFire += FireAfterBossFire;
+                }
+            }
+        }
+        private void CrossCheckForWithBoss(){
+            if(!hasBoss()){
+                foreach(EnemyBase enemyonBottom in minionEnemyList){
+                    if(enemyonBottom.GetEnemyPositions() == EnemyPositions.withBoss){
+                        enemyonBottom.SetEnemyPosition(EnemyPositions.No_Boss);
+                    }
                 }
             }
         }
@@ -129,7 +140,7 @@ namespace GamerWolf.Super_BoyZ {
                 }
                 
             }
-            CheckifBossInScene();
+            // CheckifBossInScene();
             
         }
         private void SpawnLevel_1_Defficulty(){
@@ -181,7 +192,7 @@ namespace GamerWolf.Super_BoyZ {
             }
             
         }
-        private bool hasBoss(){
+        public bool hasBoss(){
             if(bossMinonList.Count > 0){
                 return true;
             }
@@ -246,15 +257,15 @@ namespace GamerWolf.Super_BoyZ {
                 bossMinonList.Remove(enemy);
             }
         }
-        private void CheckifBossInScene(){
-            if(bossMinonList.Count <= 0){
-                foreach(EnemyBase enemy in minionEnemyList){
-                    if(enemy.GetEnemyPositions() == EnemyPositions.withBoss){
-                        enemy.SetEnemyPosition(EnemyPositions.Bottom);
-                    }
-                }
-            }
-        }
+        // private void CheckifBossInScene(){
+        //     if(bossMinonList.Count <= 0){
+        //         foreach(EnemyBase enemy in minionEnemyList){
+        //             if(enemy.GetEnemyPositions() == EnemyPositions.withBoss){
+        //                 enemy.SetEnemyPosition(EnemyPositions.None);
+        //             }
+        //         }
+        //     }
+        // }
         // private void IfSpawnWithBoss(){
         //     foreach(EnemyBase enemy in bossMinonList){
         //         if(enemy.GetEnemyType() == EnemyType.Minions){
@@ -300,17 +311,17 @@ namespace GamerWolf.Super_BoyZ {
         private void SpawnSingelEnemey(){
             int rand = UnityEngine.Random.Range(0,minionBottomPlatformspawnPointArray.Length);
             if(bossMinonList.Count > 0){
-                minionBottomPlatformspawnPointArray[rand].SpawnMinionEnemy(player.GetBottomtargetPoint(),EnemyPositions.withBoss);
+                minionBottomPlatformspawnPointArray[rand].SpawnMinionOnBottomPlatform(player.GetBottomtargetPoint(),EnemyPositions.withBoss);
             }else{
-                minionBottomPlatformspawnPointArray[rand].SpawnMinionEnemy(player.GetBottomtargetPoint(),EnemyPositions.Bottom);
+                minionBottomPlatformspawnPointArray[rand].SpawnMinionOnBottomPlatform(player.GetBottomtargetPoint(),EnemyPositions.No_Boss);
             }
         }
         private void SpawnBothSideEnemy(){
             foreach(Platform pl in minionBottomPlatformspawnPointArray){
                 if(bossMinonList.Count > 0){
-                    pl.SpawnMinionEnemy(player.GetBottomtargetPoint(),EnemyPositions.withBoss);
+                    pl.SpawnMinionOnBottomPlatform(player.GetBottomtargetPoint(),EnemyPositions.withBoss);
                 }else{
-                    pl.SpawnMinionEnemy(player.GetBottomtargetPoint(),EnemyPositions.Bottom);
+                    pl.SpawnMinionOnBottomPlatform(player.GetBottomtargetPoint(),EnemyPositions.No_Boss);
                 }
             }
             
@@ -322,10 +333,11 @@ namespace GamerWolf.Super_BoyZ {
         #region Top Platform Enemy Spawning Conditions....
         private void SpawnTopPlatformMinionEnemys(){
             if(!hasBoss()){
-                foreach(Platform platforms in minionTopPlatformspawnPointArray){
-                    platforms.SpawnMinionEnemy(player.GetToptargetPoint(),EnemyPositions.Top);
+                for (int i = 0; i < minionTopPlatformspawnPointArray.Length; i++){
+                    minionTopPlatformspawnPointArray[i].SpawnMinionOnTopPlatform(player.GetToptargetPoint(),EnemyPositions.No_Boss);
                     
                 }
+                
             }else{
                 SpawnBottomPlatformMinionEnemys(4);
             }
@@ -337,7 +349,7 @@ namespace GamerWolf.Super_BoyZ {
         #region Boss Enemy Spawing.........
 
         private void SpawnBossEnemys(){
-            bossSpawnPoint.SpawnBossEnemy(player.GetToptargetPoint(),EnemyPositions.Top);
+            bossSpawnPoint.SpawnBossEnemy(player.GetToptargetPoint(),EnemyPositions.No_Boss);
         }
 
         #endregion
@@ -367,6 +379,7 @@ namespace GamerWolf.Super_BoyZ {
             }
             player.SetInputsEnableDesable(false);
             gameHandler.SetIsPlayerDead(true);
+            UiHandler.current.ShowTotalKills();
         }
         public void Revied(){
             player.SetInputsEnableDesable(true);
@@ -403,15 +416,20 @@ namespace GamerWolf.Super_BoyZ {
         #region Kills Count and UI...
         public void IncreaseMinionEnemyKilledCount(){
             minionEnemyKilledCount += 5;
-
+            UpdateKillInUI();
         }
         public void IncreaseBossKillCount(){
             bossKillCount += 25;
+            UpdateKillInUI();
         }
         public void UpdateKillInUI(){
             int killCount = minionEnemyKilledCount + bossKillCount;
-            
-            UiHandler.current.SetKillCounts(killCount);
+            gameHandler.AddCoins(killCount);
+        }
+        public void SubscribeOnPlayerRevived(){
+            if(onPlayerRevived != null){
+                onPlayerRevived();
+            }
         }
 
         #endregion

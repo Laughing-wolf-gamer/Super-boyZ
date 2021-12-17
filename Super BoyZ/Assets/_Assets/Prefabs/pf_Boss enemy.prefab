@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6840719912524245454}
   - component: {fileID: 5555382685690512509}
   - component: {fileID: 5481498605385950839}
+  - component: {fileID: 531818086783037201}
   m_Layer: 7
   m_Name: GFX Animated
   m_TagString: Untagged
@@ -72,12 +73,12 @@ SpriteRenderer:
   m_SortingLayerID: -1674265709
   m_SortingLayer: 1
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: b9ac330f16892074b94f95a421eba28e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5831e1cd20b150d49add1fe52bcbf042, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.99, y: 3.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -102,6 +103,101 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &531818086783037201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477480306404066404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a9bc02ccace7f4fadda6c3a1ed24b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyBase: {fileID: -4935565776535324752}
+--- !u!1 &3064209962207154431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2759881854592621316}
+  - component: {fileID: 396617581882965041}
+  m_Layer: 0
+  m_Name: Muzzel Flash 2_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2759881854592621316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3064209962207154431}
+  m_LocalRotation: {x: -0, y: -0, z: -0.8984886, w: 0.43899706}
+  m_LocalPosition: {x: -0.476, y: -1.405, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5093911953200344130}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -127.92}
+--- !u!212 &396617581882965041
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3064209962207154431}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1674265709
+  m_SortingLayer: 1
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -4953825849600521672, guid: b0ecfcdd019940346badbe0675750487, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.51000005, y: 0.25}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &5093911952340757313
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +297,10 @@ MonoBehaviour:
   currentHealth: 0
   canDie: 0
   canHit: 1
+  initJumpForce: 10
+  onDeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
   enemyType: 1
   bulletSpeedBottomEnemy: 300
   bulletSpeedTopEnemy: 300
@@ -208,8 +308,11 @@ MonoBehaviour:
   bottomEnmyFireRate: 0
   wepon: {fileID: 5093911953338128258}
   weponPivot: {fileID: 5093911953200344130}
-  topEnemyGFXanimator: {fileID: 5481498605385950839}
-  bottomEnemyGFXanimator: {fileID: 0}
+  topEnemyWeponPivotPos: {x: 0, y: 0, z: 0}
+  bottomEnemyWeponPivotPos: {x: 0, y: 0, z: 0}
+  enemyOnDeath: {fileID: 531818086783037201}
+  currentGFXAnimator: {fileID: 5481498605385950839}
+  muzzelFlash: {fileID: 3064209962207154431}
   canShoot: 0
   isFierd: 0
 --- !u!1 &5093911952358944021
@@ -270,6 +373,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5093911954033070386}
+  - {fileID: 2759881854592621316}
   m_Father: {fileID: 5093911952340757315}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

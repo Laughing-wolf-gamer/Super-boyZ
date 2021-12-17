@@ -3,14 +3,13 @@ using UnityEngine;
 namespace GamerWolf.Super_BoyZ {
     public class HealthEntity : MonoBehaviour,IDamagable {
         
-        public event EventHandler onDead;
-        public event EventHandler OnHit;
-
         [SerializeField] protected int maxHealth;
         [SerializeField] protected bool isDead;
         [SerializeField] protected int currentHealth;
         [SerializeField] protected bool canDie;
         [SerializeField] protected bool canHit;
+        public event EventHandler onDead;
+        public event EventHandler OnHit;
         protected virtual void Start(){
             RestHealth();   
         }

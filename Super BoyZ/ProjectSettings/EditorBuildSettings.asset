@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Game Scene.unity
+    path: Assets/Scenes/Persistant Scene/GPGSAuth.unity
+    guid: 59bd04a5f97047643951aa984ded6e42
+  - enabled: 1
+    path: Assets/Scenes/Persistant Scene/Init Scene.unity
+    guid: 93dea4b0ed4801a47bc7f083f103e4c3
+  - enabled: 1
+    path: Assets/Scenes/Persistant Scene/Main Menu.unity
+    guid: f77a3926b034cf541bcb0f12134b9bc3
+  - enabled: 1
+    path: Assets/Scenes/Game Scene/Game Scene.unity
     guid: 722a10806afadce46931f17a188a487c
   m_configObjects: {}

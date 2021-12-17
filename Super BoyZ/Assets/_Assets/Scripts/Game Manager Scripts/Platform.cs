@@ -13,6 +13,7 @@ namespace GamerWolf.Super_BoyZ {
         [SerializeField] private float checkRadius = 0.3f;
         [SerializeField] private Vector2 offset;
         [SerializeField] private LayerMask whatIsEnemy;
+        [SerializeField] private Transform jumpPoint;
 
         private ObjectPoolingManager objectPooling;
         private LevelManager levelManager;
@@ -59,14 +60,35 @@ namespace GamerWolf.Super_BoyZ {
         }
 
         
-        public void SpawnMinionEnemy(Transform _viewTarget,EnemyPositions pos){
+        public void SpawnMinionOnTopPlatform(Transform _viewTarget,EnemyPositions pos){
             
             if(!hasEnemyOnPlatform()){
-                Vector2 spanwPoint = (Vector2) transform.position + offset;
-                GameObject enemy = objectPooling.SpawnFromPool(PoolObjectTag.Minion_Enemy,spanwPoint,transform.rotation);
+                GameObject enemy = objectPooling.SpawnFromPool(PoolObjectTag.Top_Minion_Enemy,jumpPoint.position,transform.rotation);
                 EnemyBase minion = enemy.GetComponent<EnemyBase>();
+                minion.SetJumpDir(jumpPoint.right);
                 minion.SetEnemyPosition(pos);
                 
+                if(minion != null){
+                    minion.SetTarget(_viewTarget);
+                }
+                levelManager.AddMinionEnemy(minion);
+            }else{
+                for (int i = 0; i < platformEnemy().Count; i++){
+                    foreach(EnemyBase enemys in platformEnemy()){
+                        levelManager.RemoveMinonEnemy(enemys);
+                        enemys.DestroyMySelf();
+                    }
+                }
+            }
+        }
+        public void SpawnMinionOnBottomPlatform(Transform _viewTarget,EnemyPositions pos){
+            
+            if(!hasEnemyOnPlatform()){
+                
+                GameObject enemy = objectPooling.SpawnFromPool(PoolObjectTag.Bottom_Minion_Enemy,jumpPoint.position,transform.rotation);
+                EnemyBase minion = enemy.GetComponent<EnemyBase>();
+                minion.SetEnemyPosition(pos);
+                minion.SetJumpDir(jumpPoint.right);
                 if(minion != null){
                     minion.SetTarget(_viewTarget);
                 }

@@ -1,8 +1,8 @@
 using UnityEngine;
+using GamerWolf.Utils;
 using UnityEngine.Events;
 using System.Collections;
 using UnityEngine.SceneManagement;
-
 namespace GamerWolf.Super_BoyZ {
     public class GameHandler : MonoBehaviour {
         
@@ -12,14 +12,22 @@ namespace GamerWolf.Super_BoyZ {
         [SerializeField] private UnityEvent OnGameplaying,OnGameEnd,OnGamePause,OnGameResume;
 
 
-        [Header("Testing")]
-        [SerializeField] private bool isGamePlaying,isGameOver;
-        [SerializeField] private bool canShowAd,isShowingAds;
+        [Header("References")]
+        [SerializeField] private PlayerDataSO playerData;
+
+        [Header("Testing Exposed Variable")]
         [SerializeField] private bool isPlayerDead;
         [SerializeField] private bool isRevived;
+
+        [SerializeField] private bool isGamePlaying,isGameOver;
+        [SerializeField] private bool canShowAd,isShowingAds;
         private LevelManager levelManager;
         public static bool hasAdInGame = true;
         private AdController adController;
+        public bool isGamePause;
+        private int currentKillCount;
+        
+        
 
         #region Singelton..........
         public static GameHandler current;
@@ -38,22 +46,17 @@ namespace GamerWolf.Super_BoyZ {
 
 
         private void Start(){
-            isGameOver = false;
+            
             StartCoroutine(nameof(GamePlayStartRoutine));
         }
-        private void Update(){
-
-            // Debuing....
-            // Need to remove.......at build..
-            if(Input.GetKeyDown(KeyCode.Escape)){
-                
-                Application.Quit();
-            }
-        }
+        
 
         #region Game Play Routine.....
-
+        private void InvokeStartGame(){
+            PlayGame();
+        }
         private IEnumerator GamePlayStartRoutine(){
+            Invoke(nameof(InvokeStartGame),0.2f);
             OnGameStart?.Invoke();
             while(!isGamePlaying){
                 // to do.
@@ -68,9 +71,10 @@ namespace GamerWolf.Super_BoyZ {
             while(!isGameOver){
                 // To do..
                 if(!isPlayerDead){
-                    levelManager.UpdateKillInUI();
+                    
                     levelManager.CheckExtraEnemy();
                     UiHandler.current.ShowAdWindow(false);
+                    UiHandler.current.SetCoinCounts(currentKillCount);
                 }else{
                     isRevived = false;
                     if(canShowAd){
@@ -92,7 +96,6 @@ namespace GamerWolf.Super_BoyZ {
                 if(!isGameOver){
                     UiHandler.current.ShowAdWindow(true);
                 }else{
-                    
                     break;
                 }
                 yield return null;
@@ -115,16 +118,24 @@ namespace GamerWolf.Super_BoyZ {
             isGamePlaying = true;
         }
         public void Restart(){
-            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        }
-        public void PauseGame(){
-            Time.timeScale = 0f;
-            OnGamePause?.Invoke();
-        }
-        public void ResumeGame(){
             Time.timeScale = 1f;
-            OnGameResume?.Invoke();
+            playerData.AddCoins(currentKillCount);
+            LevelLoader.current.PlayLevel(SceneIndex.Game_Scene);
         }
+        public void Play_PauseGame(){
+            if(isGamePlaying){
+                isGamePause = !isGamePause;
+                if(isGamePause){
+                    Time.timeScale = 0f;
+                    OnGamePause?.Invoke();
+                }else{
+                    Time.timeScale = 1f;
+                    OnGameResume?.Invoke();
+                }
+            }
+            
+        }
+        
         public void SetIsPlayerDead(bool _isdead){
             isPlayerDead = _isdead;
         }
@@ -135,6 +146,10 @@ namespace GamerWolf.Super_BoyZ {
             yield return new WaitForSeconds(delay);
             isGameOver = true;
         }
+        public void AddCoins(int _amount){
+            currentKillCount += _amount;
+        }
+        
         
         #endregion
 
@@ -157,6 +172,7 @@ namespace GamerWolf.Super_BoyZ {
         }
         public void SetIsRevived(bool _value){
             isRevived = _value;
+            levelManager.SubscribeOnPlayerRevived();
             
         }
         public void ShowInterstetialAds(){
@@ -167,6 +183,10 @@ namespace GamerWolf.Super_BoyZ {
         private void InvokeInterstetialAds(){
             adController.ShowInterstitialAd();
         }
+        public void MoveToMenu(){
+            LevelLoader.current.PlayLevel(SceneIndex.Main_Menu);
+        }
+        
         #endregion
         
     }

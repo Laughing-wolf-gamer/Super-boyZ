@@ -20,7 +20,7 @@ public class AdController : MonoBehaviour{
 
     
     private void Awake(){
-        DontDestroyOnLoad(this);
+        // DontDestroyOnLoad(this);
         if (current == null){
             current = this;
         }

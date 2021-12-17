@@ -1,7 +1,7 @@
 using UnityEngine;
 
 namespace GamerWolf.Utils {
-    [CreateAssetMenu(fileName = "New Screen Shake Propetie",menuName = "ScriptableObject/Screen Shake/Propertie")]
+    [CreateAssetMenu(fileName = "New Screen Shake Propetie",menuName = "ScriptableObject/Screen Shake/Properties")]
     public class ScreenShakePropertiesSO : ScriptableObject {
         
         public float angle;

@@ -1,0 +1,2713 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.23f1 (c5d91304a876) revision 12966163'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 22000.348; Version 2009; 64bit' Language: 'en' Physical Memory: 8070 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+G:/Unity Games Projects/Git Repos/Super-boyZ/Super BoyZ
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58787
+Successfully changed project path to: G:/Unity Games Projects/Git Repos/Super-boyZ/Super BoyZ
+G:/Unity Games Projects/Git Repos/Super-boyZ/Super BoyZ
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 235.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.23f1 (c5d91304a876)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path G:/Unity Games Projects/Git Repos/Super-boyZ/Super BoyZ/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce MX110 (ID=0x174e)
+    Vendor:   
+    VRAM:     2010 MB
+    Driver:   27.21.14.6280
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002505 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 138.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.375 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1375ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1113ms)
+			LoadAssemblies (108ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (365ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (440ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (139ms)
+				BeforeProcessingInitializeOnLoad (24ms)
+				ProcessInitializeOnLoadAttributes (200ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.014823 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 152.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.007 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3010ms)
+		BeginReloadAssembly (370ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (2538ms)
+			LoadAssemblies (256ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (736ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (151ms)
+			SetupLoadedEditorAssemblies (1045ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (153ms)
+				BeforeProcessingInitializeOnLoad (182ms)
+				ProcessInitializeOnLoadAttributes (624ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 3.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 156.6 MB.
+System memory in use after: 156.8 MB.
+
+Unloading 221 unused Assets to reduce memory usage. Loaded Objects now: 3982.
+Total: 7.626800 ms (FindLiveObjects: 1.109400 ms CreateObjectMapping: 0.577000 ms MarkObjects: 5.744900 ms  DeleteObjects: 0.193800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/Game Scene/Game Scene.unity
+  artifactKey: Guid(722a10806afadce46931f17a188a487c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scene/Game Scene.unity using Guid(722a10806afadce46931f17a188a487c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05b8150e4e0fa587b21a2814819582f4') in 0.101483 seconds 
+  Import took 0.168067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.357354 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/SampleTest/Po_Paused copy.png
+  artifactKey: Guid(156f6d3472bf5ec4aadf851a03179987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/SampleTest/Po_Paused copy.png using Guid(156f6d3472bf5ec4aadf851a03179987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2ad1649008e1bcd09278a5fae999b7b') in 0.571789 seconds 
+  Import took 0.639887 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010048 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.412 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2413ms)
+		BeginReloadAssembly (195ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (67ms)
+		EndReloadAssembly (2106ms)
+			LoadAssemblies (177ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (765ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (102ms)
+			SetupLoadedEditorAssemblies (797ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (208ms)
+				ProcessInitializeOnLoadAttributes (548ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 7.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.2 MB.
+System memory in use after: 149.4 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 3990.
+Total: 14.108900 ms (FindLiveObjects: 1.035500 ms CreateObjectMapping: 0.748300 ms MarkObjects: 11.992800 ms  DeleteObjects: 0.328200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 331.752377 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/SampleTest/Settings_Popups.png
+  artifactKey: Guid(2842e92d40a90294d81b9e8e2752c461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/SampleTest/Settings_Popups.png using Guid(2842e92d40a90294d81b9e8e2752c461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '464c885975a673260f4c7e5d9c5f14dc') in 0.152897 seconds 
+  Import took 0.211432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.192710 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/SampleTest/Po_GameOver.png
+  artifactKey: Guid(81d37c65a69644547b444d5df59ee31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/SampleTest/Po_GameOver.png using Guid(81d37c65a69644547b444d5df59ee31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a538f910ca2a643727d03d15db914fc8') in 0.065385 seconds 
+  Import took 0.136109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 132.521042 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Popupsimages/PauseHome.png
+  artifactKey: Guid(816bf23a2e1454b4f8ee544fcacbd31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Popupsimages/PauseHome.png using Guid(816bf23a2e1454b4f8ee544fcacbd31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36961f1ac1f3c7c066b0c50c6a11242e') in 0.073185 seconds 
+  Import took 0.143532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 96.713248 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Popupsimages/Rematch.png
+  artifactKey: Guid(7c37b09d69c20504683f9c2343cfad7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Popupsimages/Rematch.png using Guid(7c37b09d69c20504683f9c2343cfad7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42090c2beb514ebff23912fed88bab4e') in 0.034933 seconds 
+  Import took 0.153629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 158.688195 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Popupsimages/Settings.png
+  artifactKey: Guid(cd8afae83f527f046831f7a87270b99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Popupsimages/Settings.png using Guid(cd8afae83f527f046831f7a87270b99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc706b1358d9cea5f7d693d785b360b9') in 0.032029 seconds 
+  Import took 0.088100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 326.553915 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Popupsimages/Coin earned 1.png
+  artifactKey: Guid(5af9c3fc7d9e09545afcab59ce2badb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Popupsimages/Coin earned 1.png using Guid(5af9c3fc7d9e09545afcab59ce2badb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e294d36c1ae488e3c005d00442e6ef3c') in 0.029688 seconds 
+  Import took 0.143797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.009522 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Popupsimages/Coin earned.png
+  artifactKey: Guid(bb9cad41bd9dec04ca1b4c46854e68d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Popupsimages/Coin earned.png using Guid(bb9cad41bd9dec04ca1b4c46854e68d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b54275c4dcdf6e1259252feacb9d81') in 0.026153 seconds 
+  Import took 0.157010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 172.336893 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Popupsimages/totalCoins.png
+  artifactKey: Guid(fe7188e766aa2f646940516517b302f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Popupsimages/totalCoins.png using Guid(fe7188e766aa2f646940516517b302f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b25d0e00f6f467d4dd25ff657e306b3') in 0.033304 seconds 
+  Import took 0.193119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 328.712031 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Popupsimages/reviveText 1.png
+  artifactKey: Guid(ffe8d4686d3f66c408e5eee682f44377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Popupsimages/reviveText 1.png using Guid(ffe8d4686d3f66c408e5eee682f44377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4d51089fac838b3359a545606a7e9fd') in 0.030049 seconds 
+  Import took 0.169643 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.436176 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 4.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.680 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3681ms)
+		BeginReloadAssembly (256ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (90ms)
+		EndReloadAssembly (3277ms)
+			LoadAssemblies (212ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (755ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (104ms)
+			SetupLoadedEditorAssemblies (1677ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (230ms)
+				ProcessInitializeOnLoadAttributes (1393ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 9.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.2 MB.
+System memory in use after: 149.5 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4003.
+Total: 8.600800 ms (FindLiveObjects: 0.631400 ms CreateObjectMapping: 0.418000 ms MarkObjects: 7.398700 ms  DeleteObjects: 0.150700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014597 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.209 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2209ms)
+		BeginReloadAssembly (183ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (1923ms)
+			LoadAssemblies (175ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (616ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (83ms)
+			SetupLoadedEditorAssemblies (769ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (225ms)
+				ProcessInitializeOnLoadAttributes (507ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.3 MB.
+System memory in use after: 149.5 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4005.
+Total: 6.814300 ms (FindLiveObjects: 0.547700 ms CreateObjectMapping: 0.261300 ms MarkObjects: 5.800900 ms  DeleteObjects: 0.202800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015215 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 4.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.208 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2208ms)
+		BeginReloadAssembly (182ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1906ms)
+			LoadAssemblies (162ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (627ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (83ms)
+			SetupLoadedEditorAssemblies (769ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (220ms)
+				ProcessInitializeOnLoadAttributes (511ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.3 MB.
+System memory in use after: 149.5 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4007.
+Total: 6.932500 ms (FindLiveObjects: 0.603600 ms CreateObjectMapping: 0.354200 ms MarkObjects: 5.856900 ms  DeleteObjects: 0.116100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013551 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.860 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2861ms)
+		BeginReloadAssembly (501ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (165ms)
+		EndReloadAssembly (2202ms)
+			LoadAssemblies (335ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (746ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (105ms)
+			SetupLoadedEditorAssemblies (854ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (205ms)
+				ProcessInitializeOnLoadAttributes (601ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.3 MB.
+System memory in use after: 149.5 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4009.
+Total: 8.132000 ms (FindLiveObjects: 0.616900 ms CreateObjectMapping: 0.375500 ms MarkObjects: 6.968800 ms  DeleteObjects: 0.169000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 766.013049 seconds.
+  path: Assets/Scenes/Game Scene/Game Scene.unity
+  artifactKey: Guid(722a10806afadce46931f17a188a487c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scene/Game Scene.unity using Guid(722a10806afadce46931f17a188a487c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0282a5d0806dff9cdffabd3380a87961') in 0.031500 seconds 
+  Import took 0.347412 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011229 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.581 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2581ms)
+		BeginReloadAssembly (232ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (79ms)
+		EndReloadAssembly (2226ms)
+			LoadAssemblies (201ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (717ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (96ms)
+			SetupLoadedEditorAssemblies (899ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (240ms)
+				ProcessInitializeOnLoadAttributes (614ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (30ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.3 MB.
+System memory in use after: 149.6 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4011.
+Total: 8.154000 ms (FindLiveObjects: 0.664100 ms CreateObjectMapping: 0.382900 ms MarkObjects: 6.967600 ms  DeleteObjects: 0.137600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 61.194263 seconds.
+  path: Assets/Scenes/Game Scene/Game Scene.unity
+  artifactKey: Guid(722a10806afadce46931f17a188a487c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scene/Game Scene.unity using Guid(722a10806afadce46931f17a188a487c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df87b182687723b83d8c454040c58266') in 0.028660 seconds 
+  Import took 0.132102 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011067 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.541 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2542ms)
+		BeginReloadAssembly (245ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (81ms)
+		EndReloadAssembly (2184ms)
+			LoadAssemblies (218ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (735ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (96ms)
+			SetupLoadedEditorAssemblies (834ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (194ms)
+				ProcessInitializeOnLoadAttributes (600ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (24ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 4.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.3 MB.
+System memory in use after: 149.6 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4013.
+Total: 8.920600 ms (FindLiveObjects: 0.801100 ms CreateObjectMapping: 0.543100 ms MarkObjects: 7.435000 ms  DeleteObjects: 0.138900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009928 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 7.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.345 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3346ms)
+		BeginReloadAssembly (284ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (123ms)
+		EndReloadAssembly (2921ms)
+			LoadAssemblies (244ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (822ms)
+			ReleaseScriptCaches (8ms)
+			RebuildScriptCaches (179ms)
+			SetupLoadedEditorAssemblies (1210ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (7ms)
+				BeforeProcessingInitializeOnLoad (518ms)
+				ProcessInitializeOnLoadAttributes (631ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (30ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 6.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.3 MB.
+System memory in use after: 149.6 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4015.
+Total: 8.362900 ms (FindLiveObjects: 0.594900 ms CreateObjectMapping: 0.427900 ms MarkObjects: 7.120800 ms  DeleteObjects: 0.216600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010457 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 4.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.687 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2688ms)
+		BeginReloadAssembly (211ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (71ms)
+		EndReloadAssembly (2370ms)
+			LoadAssemblies (209ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (738ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (91ms)
+			SetupLoadedEditorAssemblies (955ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (233ms)
+				ProcessInitializeOnLoadAttributes (671ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.4 MB.
+System memory in use after: 149.6 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4017.
+Total: 8.431800 ms (FindLiveObjects: 0.675300 ms CreateObjectMapping: 0.383400 ms MarkObjects: 7.232500 ms  DeleteObjects: 0.138600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010943 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.481 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2483ms)
+		BeginReloadAssembly (276ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (28ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (81ms)
+		EndReloadAssembly (2049ms)
+			LoadAssemblies (216ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (678ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (104ms)
+			SetupLoadedEditorAssemblies (802ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (160ms)
+				ProcessInitializeOnLoadAttributes (585ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.4 MB.
+System memory in use after: 149.6 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4019.
+Total: 8.171800 ms (FindLiveObjects: 0.667300 ms CreateObjectMapping: 0.399700 ms MarkObjects: 6.969300 ms  DeleteObjects: 0.133800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013714 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.598 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2599ms)
+		BeginReloadAssembly (257ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (90ms)
+		EndReloadAssembly (2212ms)
+			LoadAssemblies (217ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (716ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (116ms)
+			SetupLoadedEditorAssemblies (793ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (213ms)
+				ProcessInitializeOnLoadAttributes (536ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 4.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.4 MB.
+System memory in use after: 149.6 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4021.
+Total: 8.402100 ms (FindLiveObjects: 0.660600 ms CreateObjectMapping: 0.389800 ms MarkObjects: 7.212300 ms  DeleteObjects: 0.137300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 876.113845 seconds.
+  path: Assets/Scenes/Game Scene/Game Scene.unity
+  artifactKey: Guid(722a10806afadce46931f17a188a487c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scene/Game Scene.unity using Guid(722a10806afadce46931f17a188a487c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af4d05e0b936468c45ff1064525c56ff') in 0.030493 seconds 
+  Import took 0.043473 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012420 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 4.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.605 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2606ms)
+		BeginReloadAssembly (203ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (68ms)
+		EndReloadAssembly (2292ms)
+			LoadAssemblies (183ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (749ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (109ms)
+			SetupLoadedEditorAssemblies (911ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (237ms)
+				ProcessInitializeOnLoadAttributes (625ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (33ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.4 MB.
+System memory in use after: 149.6 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4023.
+Total: 8.364500 ms (FindLiveObjects: 0.677400 ms CreateObjectMapping: 0.368600 ms MarkObjects: 7.147600 ms  DeleteObjects: 0.168600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010592 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 5.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.893 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2894ms)
+		BeginReloadAssembly (213ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (82ms)
+		EndReloadAssembly (2572ms)
+			LoadAssemblies (203ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (939ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (98ms)
+			SetupLoadedEditorAssemblies (911ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (6ms)
+				BeforeProcessingInitializeOnLoad (296ms)
+				ProcessInitializeOnLoadAttributes (563ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (30ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 4.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.4 MB.
+System memory in use after: 149.6 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4025.
+Total: 8.303200 ms (FindLiveObjects: 0.652700 ms CreateObjectMapping: 0.406900 ms MarkObjects: 7.077000 ms  DeleteObjects: 0.164600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013518 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 5.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.995 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2996ms)
+		BeginReloadAssembly (338ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (135ms)
+		EndReloadAssembly (2519ms)
+			LoadAssemblies (253ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (810ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (112ms)
+			SetupLoadedEditorAssemblies (964ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (244ms)
+				ProcessInitializeOnLoadAttributes (669ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (30ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.4 MB.
+System memory in use after: 149.6 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4027.
+Total: 8.289300 ms (FindLiveObjects: 0.667800 ms CreateObjectMapping: 0.369900 ms MarkObjects: 7.114900 ms  DeleteObjects: 0.135100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 538.839058 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_05.png
+  artifactKey: Guid(5831e1cd20b150d49add1fe52bcbf042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_05.png using Guid(5831e1cd20b150d49add1fe52bcbf042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bda7b7a9d4caf1831089d3970880f17') in 0.230597 seconds 
+  Import took 0.267362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.271171 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_05.png
+  artifactKey: Guid(5831e1cd20b150d49add1fe52bcbf042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_05.png using Guid(5831e1cd20b150d49add1fe52bcbf042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca91288c30fdc1328860f043dcd23d5') in 0.028374 seconds 
+  Import took 0.120979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.353367 seconds.
+  path: Assets/Scenes/Game Scene/Game Scene.unity
+  artifactKey: Guid(722a10806afadce46931f17a188a487c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Scene/Game Scene.unity using Guid(722a10806afadce46931f17a188a487c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44d47b2fc46c66909371b8f464b5b380') in 0.005415 seconds 
+  Import took 0.026429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.829384 seconds.
+  path: Assets/_Assets/Prefabs/pf_Boss enemy.prefab
+  artifactKey: Guid(21d74668bb491d54184a136e9f4944fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Prefabs/pf_Boss enemy.prefab using Guid(21d74668bb491d54184a136e9f4944fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86b4c6f9eff3407b9acc5636cfd5cb2') in 0.378638 seconds 
+  Import took 0.416766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 192.581042 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump_00.png
+  artifactKey: Guid(302c2ac2198be60479545c9514746d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump_00.png using Guid(302c2ac2198be60479545c9514746d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c12a3f63114d784b5b12b8973ec27622') in 0.058059 seconds 
+  Import took 0.076117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.702044 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump_26.png
+  artifactKey: Guid(31a10ec3c9243a24aaee0084213ddfc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump_26.png using Guid(31a10ec3c9243a24aaee0084213ddfc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'babacecde4c153583a7d26e21c163976') in 0.022393 seconds 
+  Import took 0.056007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.043622 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_00.png
+  artifactKey: Guid(92e9c6a5f5a487f4abc9084975b224aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_00.png using Guid(92e9c6a5f5a487f4abc9084975b224aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '550bf9ea49e02389d264e602fedcb74d') in 0.031389 seconds 
+  Import took 0.059739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.118910 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_25.png
+  artifactKey: Guid(8b1e7ecb1a0147e45a5afc4136e43241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_25.png using Guid(8b1e7ecb1a0147e45a5afc4136e43241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1864dfe109dc7d715aec02580d78d4da') in 0.028079 seconds 
+  Import took 0.064155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.022105 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_25.png
+  artifactKey: Guid(8b1e7ecb1a0147e45a5afc4136e43241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_25.png using Guid(8b1e7ecb1a0147e45a5afc4136e43241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c06b8df24f17d632f38999b642a204') in 0.036560 seconds 
+  Import took 0.221534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.313739 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_00.png
+  artifactKey: Guid(92e9c6a5f5a487f4abc9084975b224aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_00.png using Guid(92e9c6a5f5a487f4abc9084975b224aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bacdacffd4713069f08cc79671351c9') in 0.051573 seconds 
+  Import took 0.064616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.706565 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_01.png
+  artifactKey: Guid(92f4448ab7360ed48880da99ef1543b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_01.png using Guid(92f4448ab7360ed48880da99ef1543b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74e9424c4b1d382131a69627621c10ad') in 0.041668 seconds 
+  Import took 0.087215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061309 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_02.png
+  artifactKey: Guid(c37fcab6c13f6a346b71c6747f729dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_02.png using Guid(c37fcab6c13f6a346b71c6747f729dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b00a015e0ea6834608ab71e1799d1a64') in 0.045741 seconds 
+  Import took 0.067088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.066566 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_03.png
+  artifactKey: Guid(e42ca2aa39b41ad45bd65d24da9b05de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_03.png using Guid(e42ca2aa39b41ad45bd65d24da9b05de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f33880d6612919f9ec1aafb7d7651a02') in 0.027250 seconds 
+  Import took 0.040344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.084111 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_04.png
+  artifactKey: Guid(3cb0702462f552d4b9ed9d464dbef04d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_04.png using Guid(3cb0702462f552d4b9ed9d464dbef04d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9c7b1dfde4e87b5a9e5704e492bc97e') in 0.030250 seconds 
+  Import took 0.057970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.089495 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_05.png
+  artifactKey: Guid(3a0f3f5f13a0f734f880657d0f194daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_05.png using Guid(3a0f3f5f13a0f734f880657d0f194daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95b1d89084706632cc823cf7020b26dd') in 0.026443 seconds 
+  Import took 0.127500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_06.png
+  artifactKey: Guid(22e07ec922853c0408a0ed3402e0a5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_06.png using Guid(22e07ec922853c0408a0ed3402e0a5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c2bcbe3cc67a62fc1f4ae37eebb319f') in 0.056997 seconds 
+  Import took 0.097214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030677 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_07.png
+  artifactKey: Guid(74249ac2d146f6c49a7960735302a013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_07.png using Guid(74249ac2d146f6c49a7960735302a013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '766779f414919a168c6c419478ec6a94') in 0.028296 seconds 
+  Import took 0.054726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.080901 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_08.png
+  artifactKey: Guid(335c69a5650ff5d439d490367fd444e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_08.png using Guid(335c69a5650ff5d439d490367fd444e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '922669191ea18841d2069e411a494dc3') in 0.026686 seconds 
+  Import took 0.044140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.057367 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_09.png
+  artifactKey: Guid(fd0ffbdff39af3543a7f33753d7220c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_09.png using Guid(fd0ffbdff39af3543a7f33753d7220c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc16089f509c8e2655e3975eb8f33131') in 0.038157 seconds 
+  Import took 0.061144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.087821 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_10.png
+  artifactKey: Guid(47a46ed7cb923a9439ad31cc1f0dd2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_10.png using Guid(47a46ed7cb923a9439ad31cc1f0dd2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c20c097c0c6a14af7f274526b9a9ad2') in 0.052413 seconds 
+  Import took 0.073446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065877 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_11.png
+  artifactKey: Guid(3237d804a5dcbe24287efbe4c95f391a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_11.png using Guid(3237d804a5dcbe24287efbe4c95f391a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dff3f5edf33b1aea93bbc865c28243e7') in 0.029593 seconds 
+  Import took 0.042373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.089675 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_12.png
+  artifactKey: Guid(a767e0f0ba26e0042a60e20887a57b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_12.png using Guid(a767e0f0ba26e0042a60e20887a57b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8dd1fb0329ce326395db2326eef67a5') in 0.050609 seconds 
+  Import took 0.072732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.067173 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_13.png
+  artifactKey: Guid(19796f2ca43cbf9498c533235082b02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_13.png using Guid(19796f2ca43cbf9498c533235082b02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b184aba95bfcc0fcd9b98ceecbb74bd') in 0.030908 seconds 
+  Import took 0.058398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.077538 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_14.png
+  artifactKey: Guid(3ea3241f6ea52d049bb3793334e1fcd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_14.png using Guid(3ea3241f6ea52d049bb3793334e1fcd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66a6d7312204eee714a73399c3c72f4c') in 0.024307 seconds 
+  Import took 0.036355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.094506 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_15.png
+  artifactKey: Guid(9296c8fe5432c5943b1e11f1d42cba79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_15.png using Guid(9296c8fe5432c5943b1e11f1d42cba79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0d9889b1803260edb86daa7e56bd77d') in 0.027465 seconds 
+  Import took 0.049140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.083023 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_16.png
+  artifactKey: Guid(d6f3809f94187214eb720fe28bd4a137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_16.png using Guid(d6f3809f94187214eb720fe28bd4a137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bcef53dae662a8271c014fcd3e40a23') in 0.027698 seconds 
+  Import took 0.070871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.414940 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_17.png
+  artifactKey: Guid(65264dacf62154c479666de6953ac047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_17.png using Guid(65264dacf62154c479666de6953ac047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '322a4945b86c00c1051b9adc783dbf8a') in 0.108733 seconds 
+  Import took 0.130818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.112166 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_18.png
+  artifactKey: Guid(94fd76817e1ce134cb3d2f18627866dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_18.png using Guid(94fd76817e1ce134cb3d2f18627866dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd72006d3378d9a228ab4165a68aa6946') in 0.029541 seconds 
+  Import took 0.042889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047679 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_19.png
+  artifactKey: Guid(a9e31123ab832074d9b49ed6e58dde4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_19.png using Guid(a9e31123ab832074d9b49ed6e58dde4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eec6a98fb01f479535df789d4e22404') in 0.036455 seconds 
+  Import took 0.047243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.076184 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_20.png
+  artifactKey: Guid(8b8770787b2d17e46a5228506c4fe98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_20.png using Guid(8b8770787b2d17e46a5228506c4fe98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96f355ed7eae66477e64f9576f0c57d') in 0.024999 seconds 
+  Import took 0.041811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.109993 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_21.png
+  artifactKey: Guid(7ea1aae0706a82447b40db054f37a61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_21.png using Guid(7ea1aae0706a82447b40db054f37a61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1212e8521d62d43616073613f1c838b') in 0.032024 seconds 
+  Import took 0.047743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.112615 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_22.png
+  artifactKey: Guid(11d6285a62d0c1941992f900b98d5cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_22.png using Guid(11d6285a62d0c1941992f900b98d5cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d31b15d38a026457fea29b0a7edb02') in 0.033613 seconds 
+  Import took 0.050026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.114102 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_23.png
+  artifactKey: Guid(a9a219e200ef9e6479192b5050580372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_23.png using Guid(a9a219e200ef9e6479192b5050580372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad4e800465c52c912404798f07c62776') in 0.032276 seconds 
+  Import took 0.047565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.108172 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_24.png
+  artifactKey: Guid(edc818f0a7be13e4cb9d818c4105a144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_24.png using Guid(edc818f0a7be13e4cb9d818c4105a144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97371a4110b2fc8fd7988363cdb9ac5') in 0.029233 seconds 
+  Import took 0.042203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.229372 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_26.png
+  artifactKey: Guid(ddf62e9689a59f044b976b888ab5b545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_26.png using Guid(ddf62e9689a59f044b976b888ab5b545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddf11f45e6b6d7f79cda918e0db3a7a8') in 0.049703 seconds 
+  Import took 0.072731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.083747 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_27.png
+  artifactKey: Guid(24f04e94a4f98ba499d5cd797edd6fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_27.png using Guid(24f04e94a4f98ba499d5cd797edd6fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa06aa78cce4b6ba7f4d1cf4a5e5d1cd') in 0.033914 seconds 
+  Import took 0.062306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.103205 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_28.png
+  artifactKey: Guid(546b829b7cb4b5743ad63f4efd491fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_28.png using Guid(546b829b7cb4b5743ad63f4efd491fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4f1e2033853b2e719dd3266ed10cdef') in 0.032419 seconds 
+  Import took 0.093503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028395 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_29.png
+  artifactKey: Guid(5c8442f7be6cc0441a1b5728b2fcd2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_29.png using Guid(5c8442f7be6cc0441a1b5728b2fcd2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbd81018fdd905fb112a44dd59c2c32b') in 0.031619 seconds 
+  Import took 0.059812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.143993 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_30.png
+  artifactKey: Guid(8ab6ce059dcf32448a7958832837fa53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_30.png using Guid(8ab6ce059dcf32448a7958832837fa53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be3719787c3fd9381521939b3115c385') in 0.034341 seconds 
+  Import took 0.050962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.109853 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_31.png
+  artifactKey: Guid(09e6c101570d8064fa8f957b6e05018d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_31.png using Guid(09e6c101570d8064fa8f957b6e05018d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50611ae1c67dfec40d7508c7e05c2889') in 0.034857 seconds 
+  Import took 0.060766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.104666 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_32.png
+  artifactKey: Guid(b1dfe737b5929c942907da543f26b7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_32.png using Guid(b1dfe737b5929c942907da543f26b7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc740eadf276fa3755f230a9be3e2e4b') in 0.031803 seconds 
+  Import took 0.086443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.041286 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_33.png
+  artifactKey: Guid(7af15ff357edcbb4abfa667e30afe997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_33.png using Guid(7af15ff357edcbb4abfa667e30afe997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7593d11af20dadf62d677d1e406a3577') in 0.031716 seconds 
+  Import took 0.069447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.099787 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_34.png
+  artifactKey: Guid(9fcfc1b1590a5ad47b1a04d0c8513f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_34.png using Guid(9fcfc1b1590a5ad47b1a04d0c8513f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6551a115b65f6d1b44fab4e9985d63a2') in 0.032910 seconds 
+  Import took 0.089193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.087928 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_35.png
+  artifactKey: Guid(ff8e85299d2b68c48bdef700d8d046d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_35.png using Guid(ff8e85299d2b68c48bdef700d8d046d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4885239d1b44890d5d99f3b8176522df') in 0.030266 seconds 
+  Import took 0.054294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.083555 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_36.png
+  artifactKey: Guid(30698f339453f84438618d0c446b7619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_36.png using Guid(30698f339453f84438618d0c446b7619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '941e8147b4a3fb5fe7411fb1225676b3') in 0.033598 seconds 
+  Import took 0.049862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.110698 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_37.png
+  artifactKey: Guid(6e890512a826d1f498ad03da9067a9be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_37.png using Guid(6e890512a826d1f498ad03da9067a9be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cb82205585b92aa9d7b9d996b1d1a7c') in 0.031605 seconds 
+  Import took 0.127690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_38.png
+  artifactKey: Guid(8bba9e8722dc8b34cb5b0d90f0327017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_38.png using Guid(8bba9e8722dc8b34cb5b0d90f0327017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6e0bec7c16c69adf5dc06bacae3ad04') in 0.027258 seconds 
+  Import took 0.065375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.066671 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_39.png
+  artifactKey: Guid(b4c09b722b4cfa54cb24dc8a01bd2ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1/SuperBoyZ_Jump_39.png using Guid(b4c09b722b4cfa54cb24dc8a01bd2ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c8993282786e3fd0c27704b2cf3af31') in 0.028735 seconds 
+  Import took 0.068129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.379028 seconds.
+  path: Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1
+  artifactKey: Guid(75109a501537a0d4ea732259391d92e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Character Animations/Animations Textures/SuperBoyZ_Jump 1 using Guid(75109a501537a0d4ea732259391d92e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdc7c9e94a318c7b3807def39837283e') in 0.006363 seconds 
+  Import took 0.022787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 342.495866 seconds.
+  path: Assets/_Assets/Prefabs/pf_Boss enemy.prefab
+  artifactKey: Guid(21d74668bb491d54184a136e9f4944fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Prefabs/pf_Boss enemy.prefab using Guid(21d74668bb491d54184a136e9f4944fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '443a92228d3e0c4283f9c30faaf8f773') in 0.264578 seconds 
+  Import took 0.304347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.760114 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_06.png
+  artifactKey: Guid(bad6c42100e018244ade6d6eb52c4f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_06.png using Guid(bad6c42100e018244ade6d6eb52c4f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df960a31843465f4f2f956918cfada0c') in 0.226604 seconds 
+  Import took 0.271282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000896 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_18.png
+  artifactKey: Guid(9b8017f91be019b448a4b4b9c2bb91aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_18.png using Guid(9b8017f91be019b448a4b4b9c2bb91aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5ff97b7d5ccbfdb345007d1d5d12531') in 0.113971 seconds 
+  Import took 0.172687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001158 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_25.png
+  artifactKey: Guid(580154dcfcb97664cb619af340fa0d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_25.png using Guid(580154dcfcb97664cb619af340fa0d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28475bdb694c628dcd26b34302a0a351') in 0.145925 seconds 
+  Import took 0.206647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000815 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_14.png
+  artifactKey: Guid(3eb02cde5a5e2ca46ace54651a6460e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_14.png using Guid(3eb02cde5a5e2ca46ace54651a6460e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9517aeda6f3d84bee4c75a3dda3022') in 0.131525 seconds 
+  Import took 0.223735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001081 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_23.png
+  artifactKey: Guid(bff931cb9934bcc4cb9b6d7bf731961b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_23.png using Guid(bff931cb9934bcc4cb9b6d7bf731961b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '804c6ba98097fd00a8981b7e9fc4aad5') in 0.114515 seconds 
+  Import took 0.139522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000856 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_16.png
+  artifactKey: Guid(9898ceff8d9abfe4486a3c6fa18358be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_16.png using Guid(9898ceff8d9abfe4486a3c6fa18358be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21e435eafa5bde2b2cd98ae6de2cc9fd') in 0.097961 seconds 
+  Import took 0.167079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000872 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_21.png
+  artifactKey: Guid(73e36e401dd4d944f87be09a12d40599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_21.png using Guid(73e36e401dd4d944f87be09a12d40599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c704dfd348cbbb3e9d00c9f4449b6cb8') in 0.126414 seconds 
+  Import took 0.190317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000888 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_08.png
+  artifactKey: Guid(bd96925fe526e6f4190644a10f388329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_08.png using Guid(bd96925fe526e6f4190644a10f388329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f1da96cfc783187d2039de0acb40e7f') in 0.107206 seconds 
+  Import took 0.149528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000931 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_13.png
+  artifactKey: Guid(1b0ceb97bc1d6554ba61203302286ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_13.png using Guid(1b0ceb97bc1d6554ba61203302286ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0d2ace8707493a3398f82129fd73c5') in 0.269979 seconds 
+  Import took 0.319737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000892 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_24.png
+  artifactKey: Guid(aa2eaf349e04e584d8b8ce219f005ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_24.png using Guid(aa2eaf349e04e584d8b8ce219f005ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88692589952a5a7a2389d5a09e94da1f') in 0.143764 seconds 
+  Import took 0.190192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000927 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_10.png
+  artifactKey: Guid(a23ba764bfdc7a84fa34257f491c6ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_10.png using Guid(a23ba764bfdc7a84fa34257f491c6ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7e72fea57c54f7b17171980c473f03') in 0.149305 seconds 
+  Import took 0.174935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000847 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_15.png
+  artifactKey: Guid(edc23713e8b5b314cbd538bc7a90d772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_15.png using Guid(edc23713e8b5b314cbd538bc7a90d772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c81cdb868a5d36e4aa79614b0facaa9') in 0.126953 seconds 
+  Import took 0.150991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000847 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_11.png
+  artifactKey: Guid(90d0b7bf2514e6240a5739011fb7c050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_11.png using Guid(90d0b7bf2514e6240a5739011fb7c050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51811749f470d4d7f3f387dbe0906866') in 0.133406 seconds 
+  Import took 0.180112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000846 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_20.png
+  artifactKey: Guid(6b6c0f4a29d795e4aa297c87e10fe80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_20.png using Guid(6b6c0f4a29d795e4aa297c87e10fe80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29971e2b219e82c5e755d801fd0ee5fd') in 0.175771 seconds 
+  Import took 0.214271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000941 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_22.png
+  artifactKey: Guid(52ce47ca601639e4c9fd2ac3db74435d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_22.png using Guid(52ce47ca601639e4c9fd2ac3db74435d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61a1908e73c9a29aefd8e52926b5bea') in 0.108577 seconds 
+  Import took 0.138683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000923 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_17.png
+  artifactKey: Guid(ea0b2097dbe773f479d111e0c1bcd4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_17.png using Guid(ea0b2097dbe773f479d111e0c1bcd4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6881356c1fc8b1c47a14a82d25a13cf6') in 0.106645 seconds 
+  Import took 0.140275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000902 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_09.png
+  artifactKey: Guid(ae0a1cbed44f8a940b01d9bb2bccca6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_09.png using Guid(ae0a1cbed44f8a940b01d9bb2bccca6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '302baf4c1e6e1d8733b1156540016cb2') in 0.083441 seconds 
+  Import took 0.142127 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.136579 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 4.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.367 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4390ms)
+		BeginReloadAssembly (569ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (18ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (198ms)
+		EndReloadAssembly (3657ms)
+			LoadAssemblies (319ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (752ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (143ms)
+			SetupLoadedEditorAssemblies (1572ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (238ms)
+				ProcessInitializeOnLoadAttributes (1258ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (59ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.7 MB.
+System memory in use after: 152.0 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4076.
+Total: 9.002400 ms (FindLiveObjects: 0.730900 ms CreateObjectMapping: 0.385200 ms MarkObjects: 7.725500 ms  DeleteObjects: 0.158300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.019376 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 4.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.029 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3030ms)
+		BeginReloadAssembly (223ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (78ms)
+		EndReloadAssembly (2666ms)
+			LoadAssemblies (181ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (702ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (115ms)
+			SetupLoadedEditorAssemblies (1139ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (243ms)
+				ProcessInitializeOnLoadAttributes (834ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (49ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.7 MB.
+System memory in use after: 152.0 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4078.
+Total: 6.800100 ms (FindLiveObjects: 0.575200 ms CreateObjectMapping: 0.322500 ms MarkObjects: 5.797100 ms  DeleteObjects: 0.103500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 119.523485 seconds.
+  path: Assets/_Assets/ScriptableObjects/Player Data/Player Data.asset
+  artifactKey: Guid(e65dbd84cbbbd4b4581e95d689741e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/ScriptableObjects/Player Data/Player Data.asset using Guid(e65dbd84cbbbd4b4581e95d689741e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c777e67a52739e61a7278ff34984d6f5') in 0.034165 seconds 
+  Import took 0.062040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.342456 seconds.
+  path: Assets/_Assets/ScriptableObjects/Player Data/Player Data.asset
+  artifactKey: Guid(e65dbd84cbbbd4b4581e95d689741e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/ScriptableObjects/Player Data/Player Data.asset using Guid(e65dbd84cbbbd4b4581e95d689741e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9cef735128b3b0ad2c7b374066665f8') in 0.008089 seconds 
+  Import took 0.034150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.621618 seconds.
+  path: Assets/_Assets/Prefabs/pf_Boss enemy.prefab
+  artifactKey: Guid(21d74668bb491d54184a136e9f4944fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Prefabs/pf_Boss enemy.prefab using Guid(21d74668bb491d54184a136e9f4944fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65b63a29fc1f69e84df5ddbe454337c7') in 0.328254 seconds 
+  Import took 0.362803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.791710 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_07.png
+  artifactKey: Guid(f6e8cb4a0bc60064e8544a6615a2a2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_07.png using Guid(f6e8cb4a0bc60064e8544a6615a2a2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0c181c7aa358d510c6f9ac5654b6d71') in 0.178054 seconds 
+  Import took 0.222492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000881 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_19.png
+  artifactKey: Guid(bd947915df04b4840ac131f567826a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_19.png using Guid(bd947915df04b4840ac131f567826a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3dfc5379dbac59bcb0fbe2c4c89bda5') in 0.101822 seconds 
+  Import took 0.136682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001231 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_12.png
+  artifactKey: Guid(a5c09dce35993e540b6dcc9befdc967f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_12.png using Guid(a5c09dce35993e540b6dcc9befdc967f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a45209ff947febe50442f0ea561f076') in 0.093063 seconds 
+  Import took 0.119015 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014354 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.581 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2582ms)
+		BeginReloadAssembly (250ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (86ms)
+		EndReloadAssembly (2189ms)
+			LoadAssemblies (194ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (674ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (119ms)
+			SetupLoadedEditorAssemblies (793ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (197ms)
+				ProcessInitializeOnLoadAttributes (552ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (44ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 5.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.3 MB.
+System memory in use after: 152.5 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4116.
+Total: 9.666300 ms (FindLiveObjects: 0.810300 ms CreateObjectMapping: 0.576400 ms MarkObjects: 8.104500 ms  DeleteObjects: 0.172400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010340 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.763 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2763ms)
+		BeginReloadAssembly (216ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (68ms)
+		EndReloadAssembly (2417ms)
+			LoadAssemblies (205ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (643ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (129ms)
+			SetupLoadedEditorAssemblies (1016ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (221ms)
+				ProcessInitializeOnLoadAttributes (759ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 4.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.3 MB.
+System memory in use after: 152.5 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4118.
+Total: 8.635700 ms (FindLiveObjects: 0.696700 ms CreateObjectMapping: 0.399400 ms MarkObjects: 7.390000 ms  DeleteObjects: 0.147800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 328.823731 seconds.
+  path: Assets/Scenes/Persistant Scene/Init Scene.unity
+  artifactKey: Guid(93dea4b0ed4801a47bc7f083f103e4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Persistant Scene/Init Scene.unity using Guid(93dea4b0ed4801a47bc7f083f103e4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214c2a7ae759e9dbf9dad7b1d25346eb') in 0.030565 seconds 
+  Import took 0.142606 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016224 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 4.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.990 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2992ms)
+		BeginReloadAssembly (282ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (30ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (94ms)
+		EndReloadAssembly (2612ms)
+			LoadAssemblies (214ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (705ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (184ms)
+			SetupLoadedEditorAssemblies (853ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (211ms)
+				ProcessInitializeOnLoadAttributes (572ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (47ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.3 MB.
+System memory in use after: 152.5 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4120.
+Total: 8.010100 ms (FindLiveObjects: 0.609300 ms CreateObjectMapping: 0.317300 ms MarkObjects: 6.959700 ms  DeleteObjects: 0.122100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011995 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.843 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2843ms)
+		BeginReloadAssembly (231ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (78ms)
+		EndReloadAssembly (2466ms)
+			LoadAssemblies (225ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (740ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (123ms)
+			SetupLoadedEditorAssemblies (895ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (229ms)
+				ProcessInitializeOnLoadAttributes (630ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (35ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.3 MB.
+System memory in use after: 152.5 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4122.
+Total: 8.286600 ms (FindLiveObjects: 0.605500 ms CreateObjectMapping: 0.358200 ms MarkObjects: 7.201700 ms  DeleteObjects: 0.119000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014218 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.864 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2865ms)
+		BeginReloadAssembly (312ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (126ms)
+		EndReloadAssembly (2403ms)
+			LoadAssemblies (225ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (635ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (121ms)
+			SetupLoadedEditorAssemblies (918ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (204ms)
+				ProcessInitializeOnLoadAttributes (670ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (46ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 5.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.3 MB.
+System memory in use after: 152.5 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4124.
+Total: 11.455600 ms (FindLiveObjects: 0.893400 ms CreateObjectMapping: 0.509000 ms MarkObjects: 9.870000 ms  DeleteObjects: 0.180100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017068 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.074 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3075ms)
+		BeginReloadAssembly (321ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (135ms)
+		EndReloadAssembly (2636ms)
+			LoadAssemblies (244ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (624ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (118ms)
+			SetupLoadedEditorAssemblies (1155ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (221ms)
+				ProcessInitializeOnLoadAttributes (872ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (55ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.3 MB.
+System memory in use after: 152.5 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4126.
+Total: 7.462400 ms (FindLiveObjects: 0.651400 ms CreateObjectMapping: 0.346900 ms MarkObjects: 6.341300 ms  DeleteObjects: 0.120800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 408.383278 seconds.
+  path: Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_05.png
+  artifactKey: Guid(5831e1cd20b150d49add1fe52bcbf042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Textures/SuperBoyZ/Animation/Animation/BigBoss_PNG/BigBoss_05.png using Guid(5831e1cd20b150d49add1fe52bcbf042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afaf8721d80b273bd295cb56b76736cb') in 0.115081 seconds 
+  Import took 0.126933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.758744 seconds.
+  path: Assets/_Assets/Prefabs/pf_Projectile.prefab
+  artifactKey: Guid(949146d33193da7438f8dbc2fd1067dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Prefabs/pf_Projectile.prefab using Guid(949146d33193da7438f8dbc2fd1067dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3c63550e65fc4cc794bd802d5247010') in 0.409803 seconds 
+  Import took 0.427860 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010102 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.945 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2946ms)
+		BeginReloadAssembly (243ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (87ms)
+		EndReloadAssembly (2592ms)
+			LoadAssemblies (199ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (687ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (127ms)
+			SetupLoadedEditorAssemblies (979ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (222ms)
+				ProcessInitializeOnLoadAttributes (709ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (48ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 5.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.5 MB.
+System memory in use after: 152.7 MB.
+
+Unloading 210 unused Assets to reduce memory usage. Loaded Objects now: 4164.
+Total: 8.895400 ms (FindLiveObjects: 0.697000 ms CreateObjectMapping: 0.403900 ms MarkObjects: 7.653000 ms  DeleteObjects: 0.139300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

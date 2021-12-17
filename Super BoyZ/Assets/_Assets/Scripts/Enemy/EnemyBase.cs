@@ -1,9 +1,11 @@
 using System;
 using UnityEngine;
 using GamerWolf.Utils;
+using UnityEngine.Events;
+using System.Collections;
 using System.Collections.Generic;
 public enum EnemyPositions{
-    Top,Bottom,withBoss
+    No_Boss,withBoss
 }
 public enum EnemyType{
     Minions,Boss,
@@ -12,6 +14,10 @@ namespace GamerWolf.Super_BoyZ {
     public class EnemyBase : HealthEntity,IPooledObject{
 
         #region Exposed Variables......
+        [Header("jump Attributes")]
+        [SerializeField] private float initJumpForce;
+        [Header("Events")]
+        [SerializeField] protected UnityEvent onDeathEvent;
         [SerializeField] private EnemyType enemyType;
         
         [SerializeField] private float bulletSpeedBottomEnemy = 100f,bulletSpeedTopEnemy = 150f;
@@ -22,9 +28,13 @@ namespace GamerWolf.Super_BoyZ {
         [SerializeField] protected Transform weponPivot;
 
         [Header("Animators")]
-        [SerializeField] protected Animator topEnemyGFXanimator;
-        [SerializeField] protected Animator bottomEnemyGFXanimator;
         [SerializeField] protected Vector3 topEnemyWeponPivotPos,bottomEnemyWeponPivotPos;
+        [SerializeField] protected EnemyOnDeath enemyOnDeath;
+        [SerializeField] protected Animator currentGFXAnimator;
+
+        [Header("Effects")]
+        [SerializeField] private GameObject muzzelFlash;
+        
 
 
         #endregion
@@ -38,8 +48,8 @@ namespace GamerWolf.Super_BoyZ {
         protected List<Projectile> currentShootingProjectileList;
         protected EnemyPositions enemyPos;
         private LevelManager levelManager;
+        private Rigidbody2D rb2D;
         private bool readyToShoot;
-        protected Animator currentGFXAnimator;
 
 
         #endregion
@@ -47,7 +57,9 @@ namespace GamerWolf.Super_BoyZ {
         #region Events...
         public Action onFire;
         #endregion
-        
+        private void Awake(){
+            rb2D = GetComponent<Rigidbody2D>();
+        }
         protected override void Start(){
             base.Start();
             fireRate = 0f;
@@ -55,7 +67,7 @@ namespace GamerWolf.Super_BoyZ {
             currentShootingProjectileList = new List<Projectile>();
             bulletSpeed = bulletSpeedBottomEnemy;
             levelManager = LevelManager.current;
-            base.OnHit += OnProjecitleHit;
+            // base.OnHit += OnProjecitleHit;
         }
         
         protected virtual void Update(){
@@ -63,24 +75,18 @@ namespace GamerWolf.Super_BoyZ {
                 if(!isDead){
                     switch (enemyPos){
                         
-                        case EnemyPositions.Top:
+                        case EnemyPositions.No_Boss:
                             SetWeponRotation();
-                            Fireing();
-                        break;
-
-                        case EnemyPositions.Bottom:
-                            
                             Fireing();
                         break;
                         case EnemyPositions.withBoss:
                             SetWeponRotation();
-                            
                         break;
                     }
                     
                     
                 }else{
-                    DestroyMySelf();
+                    PlayDeathAnimaitons();
                 }
             }
             
@@ -93,23 +99,6 @@ namespace GamerWolf.Super_BoyZ {
             }else{
                 fireRate += Time.deltaTime;
             }
-        }
-        private void ChangeAnimator(bool bottomSide,bool topSide){
-            if(bottomEnemyGFXanimator != null){
-                bottomEnemyGFXanimator.gameObject.SetActive(bottomSide);
-                if(bottomSide){
-                    weponPivot.localPosition = bottomEnemyWeponPivotPos;
-                }
-                
-            }
-            if(topEnemyGFXanimator != null){
-                topEnemyGFXanimator.gameObject.SetActive(topSide);
-                if(topSide){
-                    weponPivot.localPosition = topEnemyWeponPivotPos;
-                }
-
-            }
-
         }
         private void OnProjecitleHit(object sender,EventArgs e){
             // healthCounterPopUp.SetText(currentHealth.ToString());
@@ -151,38 +140,22 @@ namespace GamerWolf.Super_BoyZ {
             this.maxTimeToFire = fireRate;
         }
         public void SetEnemyPosition(EnemyPositions _enemyPos){
-
+            rb2D.constraints = RigidbodyConstraints2D.FreezeRotation;
             this.enemyPos = _enemyPos;
             switch (this.enemyPos){
-                case EnemyPositions.Top:
-
+                case EnemyPositions.No_Boss:
                     bulletSpeed = bulletSpeedTopEnemy;
                     SetFireRate(topEnemyFireRate);
-                    ChangeAnimator(false,true);
-                    SetCurrentGFXAnimator(topEnemyGFXanimator);
-                break;
-
-                case EnemyPositions.Bottom:
-                    bulletSpeed = bulletSpeedBottomEnemy;
-                    SetFireRate(bottomEnmyFireRate);
-                    ChangeAnimator(true,false);
-                    SetCurrentGFXAnimator(bottomEnemyGFXanimator);
                 break;
                 case EnemyPositions.withBoss:
                     Debug.Log("is With boss");
                     SetFireRate(maxTimeToFire);
-                    ChangeAnimator(true,false);
                     
-                    SetCurrentGFXAnimator(bottomEnemyGFXanimator);
                 break;
             }
             
         }
-        private void SetCurrentGFXAnimator(Animator anim){
-            if(anim != null){
-                currentGFXAnimator = anim;
-            }
-        }
+        
 
 
         #endregion
@@ -191,8 +164,9 @@ namespace GamerWolf.Super_BoyZ {
         
         public void Shoot(){
             if(readyToShoot){
-                wepon.ShootBullet(bulletSpeedBottomEnemy);
                 currentGFXAnimator.SetTrigger("Fire");
+                wepon.ShootBullet(bulletSpeedBottomEnemy);
+                StartCoroutine(showMuzzelFlash());
                 Invoke(nameof(InvokeOnFire),0.5f);
             }
             
@@ -200,19 +174,44 @@ namespace GamerWolf.Super_BoyZ {
         private void InvokeOnFire(){
             onFire?.Invoke();
         }
+        private IEnumerator showMuzzelFlash(){
+            muzzelFlash.SetActive(true);
+            yield return new WaitForSeconds(0.1f);
+            muzzelFlash.SetActive(false);
+        }
 
         public void OnObjectReuse(){
+            
             SetCanShoot(true);
             fireRate = 0f;
             RestHealth();
+        
             Invoke(nameof(InovkeReadyToShoot),1f);
         }
+        
+        public void SetJumpDir(Vector3 dir){
+            rb2D.AddForce(dir * initJumpForce);
+            
+            Invoke(nameof(InvokeConstrains),0.5f);
+        }
+        
+        private void InvokeConstrains(){
+            rb2D.constraints = RigidbodyConstraints2D.FreezePositionX;
+            rb2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+        
         private void InovkeReadyToShoot(){
             readyToShoot = true;
         }
+        public void PlayDeathAnimaitons(){
+            rb2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+            onDeathEvent?.Invoke();
+            Invoke(nameof(DestroyMySelf),0.2f);
+        }
         
-
+        
         public void DestroyMySelf(){
+            rb2D.constraints = RigidbodyConstraints2D.FreezeRotation;
             readyToShoot = false;
             canShoot = false;
             gameObject.SetActive(false);
@@ -228,6 +227,7 @@ namespace GamerWolf.Super_BoyZ {
         public EnemyPositions GetEnemyPositions(){
             return enemyPos;
         }
+        
         #endregion
         #endregion
         
